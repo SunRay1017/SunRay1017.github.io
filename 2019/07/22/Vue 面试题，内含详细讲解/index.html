@@ -29,10 +29,12 @@
 <meta property="og:site_name" content="Cherry的个人博客">
 <meta property="og:description" content="1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行页面的重新加载或跳转；取而代之的是利用路由机制实现 HTML 内容的变换，UI 与用户的交互，避免页面的重新加载。优点：用户体验好、快，内容的改变不需">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-16T03:25:12.045Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/22/Vue%20面试题，内含详细讲解/Vue生命周期.jpg">
+<meta property="og:updated_time" content="2019-09-16T03:46:29.153Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue 面试题，内含详细讲解">
 <meta name="twitter:description" content="1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行页面的重新加载或跳转；取而代之的是利用路由机制实现 HTML 内容的变换，UI 与用户的交互，避免页面的重新加载。优点：用户体验好、快，内容的改变不需">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/22/Vue%20面试题，内含详细讲解/Vue生命周期.jpg">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -110,7 +112,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -178,6 +180,16 @@
 <p>4、怎样理解 Vue 的单向数据流？<br>所有的 prop 都使得其父子 prop 之间形成了一个单向下行绑定 ：父级 prop 的更新会向下流动到子组件中，但是反过来则不行。这样会防止从子组件意外改变父级组件的状态，从而导致你的应用的数据流向难以理解。<br>额外的，每次父级组件发生更新时，子组件中所有的 prop 都将会刷新为最新的值。这意味着你不应该在一个子组件内部改变 prop。如果你这样做了，Vue 会在浏览器的控制台中发出警告。子组件想修改时，只能通过 $emit 派发一个自定义事件，父组件接收到后，由父组件修改。<br>有两种常见的试图改变一个 prop 的情形 :<br>这个 prop 用来传递一个初始值；这个子组件接下来希望将其作为一个本地的 prop 数据来使用。 在这种情况下，最好定义一个本地的 data 属性并将这个 prop 用作其初始值：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">props: [&apos;initialCounter&apos;],</span><br><span class="line">data: function () &#123;</span><br><span class="line">  return &#123;</span><br><span class="line">    counter: this.initialCounter</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>这个 prop 以一种原始的值传入且需要进行转换。 在这种情况下，最好使用这个 prop 的值来定义一个计算属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">props: [&apos;size&apos;],</span><br><span class="line">computed: &#123;</span><br><span class="line">  normalizedSize: function () &#123;</span><br><span class="line">    return this.size.trim().toLowerCase()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>5、computed 和 watch 的区别和运用的场景？<br>computed： 是计算属性，依赖其它属性值，并且 computed 的值有缓存，只有它依赖的属性值发生改变，下一次获取 computed 的值时才会重新计算 computed 的值；<br>watch： 更多的是「观察」的作用，类似于某些数据的监听回调 ，每当监听的数据变化时都会执行回调进行后续操作；<br>运用场景：<br>当我们需要进行数值计算，并且依赖于其它数据时，应该使用 computed，因为可以利用 computed 的缓存特性，避免每次获取值时，都要重新计算；<br>当我们需要在数据变化时执行异步或开销较大的操作时，应该使用 watch，使用 watch 选项允许我们执行异步操作 ( 访问一个 API )，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的。</p>
+<p>6、直接给一个数组项赋值，Vue 能检测到变化吗？<br>由于 JavaScript 的限制，Vue 不能检测到以下数组的变动：<br>当你利用索引直接设置一个数组项时，例如：vm.items[indexOfItem] = newValue<br>当你修改数组的长度时，例如：vm.items.length = newLength<br>为了解决第一个问题，Vue 提供了以下操作方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// Vue.set</span><br><span class="line">Vue.set(vm.items, indexOfItem, newValue)</span><br><span class="line">// vm.$set，Vue.set的一个别名</span><br><span class="line">vm.$set(vm.items, indexOfItem, newValue)</span><br><span class="line">// Array.prototype.splice</span><br><span class="line">vm.items.splice(indexOfItem, 1, newValue)</span><br></pre></td></tr></table></figure></p>
+<p>为了解决第二个问题，Vue 提供了以下操作方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// Array.prototype.splice</span><br><span class="line">vm.items.splice(newLength)</span><br></pre></td></tr></table></figure></p>
+<p>7、谈谈你对 Vue 生命周期的理解？<br>（1）生命周期是什么？<br>Vue 实例有一个完整的生命周期，也就是从开始创建、初始化数据、编译模版、挂载 Dom -&gt; 渲染、更新 -&gt; 渲染、卸载等一系列过程，我们称这是 Vue 的生命周期。</p>
+<p>（2）各个生命周期的作用<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="Vue生命周期.jpg" alt="image text" title>
+                </div>
+                <div class="image-caption">image text</div>
+            </figure></p>
 
         </div>
 
@@ -186,7 +198,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-09-16T03:25:12.045Z" itemprop="dateUpdated">2019-09-16 11:25:12</time>
+    最終更新：<time datetime="2019-09-16T03:46:29.153Z" itemprop="dateUpdated">2019-09-16 11:46:29</time>
 </span><br>
 
 
@@ -279,9 +291,9 @@
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2019/05/23/小狗/" id="post-next" class="post-nav-link">
+      <a href="/2019/05/22/一个简单的Jquery轮播图/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">第二篇</h4>
+        <h4 class="title">一个简单的jquery轮播图</h4>
       </a>
     </div>
   
@@ -356,7 +368,7 @@
 
         <p>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
         </p>
     </div>
     <div class="bottom">
