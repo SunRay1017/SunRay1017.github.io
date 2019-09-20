@@ -1,472 +1,1121 @@
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.8.0">
-    
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
 
-    
+<meta name="generator" content="Hexo 3.8.0" />
 
-    
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>Cherry的个人博客</title>
 
 
-
-    <meta charset="utf-8">
-    
-    
-    
-    
-    <title>Cherry的个人博客</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta name="theme-color" content="#3F51B5">
-    
-    
-    <meta name="keywords" content>
     <meta property="og:type" content="website">
 <meta property="og:title" content="Cherry的个人博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Cherry的个人博客">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cherry的个人博客">
-    
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
-    <script>window.lazyScripts=[]</script>
+<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
-    <!-- custom head -->
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
     
 
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
 </head>
-
-<body>
-    <div id="loading" class="active"></div>
-
-    <aside id="menu">
-  <div class="inner flex-row-vertical">
-    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
-        <i class="icon icon-lg icon-close"></i>
-    </a>
-    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
-      <div class="brand">
-        <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/img/1.jpg">
-        </a>
-        <hgroup class="introduce">
-          <h5 class="nickname">Cherry Xie</h5>
-          <a href="mailto:13208295650@163.com" title="13208295650@163.com" class="mail">13208295650@163.com</a>
-        </hgroup>
-      </div>
-    </div>
-    <div class="scroll-wrap flex-col">
-      <ul class="nav">
-        
-            <li class="waves-block waves-effect active">
-              <a href="/">
-                <i class="icon icon-lg icon-home"></i>
-                主页
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/archives">
-                <i class="icon icon-lg icon-archives"></i>
-                归档
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/categories">
-                <i class="icon icon-lg icon-th-list"></i>
-                分类
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="https://github.com/SunRay1017" target="_blank">
-                <i class="icon icon-lg icon-github"></i>
-                Github
-              </a>
-            </li>
-        
-      </ul>
-    </div>
-  </div>
-</aside>
-
-    <main id="main">
-        <header class="top-header" id="header">
-    <div class="flex-row">
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
-          <i class="icon icon-lg icon-navicon"></i>
-        </a>
-        <div class="flex-col header-title ellipsis">Cherry的个人博客</div>
-        
-        <div class="search-wrap" id="search-wrap">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
-                <i class="icon icon-lg icon-chevron-left"></i>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="Cherry的个人博客" height="28">
+            
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
-                <i class="icon icon-lg icon-search"></i>
-            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item is-active"
+                href="/">主页</a>
+                
+                <a class="navbar-item"
+                href="/archives">归档</a>
+                
+                <a class="navbar-item"
+                href="/categories">分类</a>
+                
+                <a class="navbar-item"
+                href="/tags">标签</a>
+                
+                <a class="navbar-item"
+                href="/about">关于</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-06T08:45:00.000Z">2019-09-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/个人简历/">个人简历</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 分钟 read (About 880 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/09/06/谢宇莲的个人简历/">谢宇莲的个人简历</a>
+            
+        </h1>
+        <div class="content">
+            <p>谢宇莲<br>性    别：女<br>联系方式：18437979252<br>邮    箱：<a href="mailto:13208295650@163.com" target="_blank" rel="noopener">13208295650@163.com</a><br>现居地址：四川成都<br>出生年月：1995.12<br>年    龄：24岁<br>工作年限：2年</p>
+<p>专业技能：</p>
+<ol>
+<li>熟悉W3C标准和Web语义化，能熟练运用HTML5，CSS3及其新特性编写兼容主流浏览器的页面布局；<br>2.能适当运用CSS3使页面在现代浏览器上效果更佳；</li>
+<li>熟练运用rem单位和flex布局实现不同浏览器宽度下的整页缩放；<br>4.熟练使用photoshop软件进行简单的图片处理，能根据图片特征保存成最优的格式；<br>5.熟练使用原生javaScript以及常用javaScript库，如jQuery；</li>
+<li>能运用模块化、面向对象的方式编程；<br>7.了解http协议，能够根据http请求报文、响应报文和状态码排查问题；<br>8.熟练运用ajax实现异步数据传递，熟悉JSON等数据交换格式；</li>
+<li>了解如何使用node.js搭建本地server模拟接口返回数据测试ajax接口；<br>10.能使用Bootstrap、Vue等前端样式库和框架进行开发，能够熟练运用JQuery，Bootstrap(栅格系统的响应式网页)。</li>
+</ol>
+<p>工作经历：<br>2017.5-至今          洛阳市儒墨科技有限公司      WEB前端开发工程师<br>2017年开始实习，实习岗位是研发助理，主要负责协助研发部门进行平台开发，具体负责平台数据配置，数据库存储过程编写以及平时的数据库管理与优化。<br>2018年年初转正为研发专员，日常工作是对公司的大数据平台进行维护，定时清理数据以及备份，以及数据接口的测试。前端方面工作主要包括：<br>1.负责公司产品或项目WEB前端开发；<br>2.根据产品需求和UI效果利用VScode编程软件进行标准网页制作；<br>3.负责JS逻辑设计与开发，JQuery特效编写以及使用插件实现特效；<br>4.解决主流浏览器兼容性问题，对网站用户体验性能进行优化；<br>5.完成产品前端展示鲜果和交互功能；<br>6.负责代码的功能测试以及反馈，按照项目经理要求完成好每一项工作。</p>
+<p>教育背景：<br>2014.9-2018.6         洛阳师范学院     本科(二本)</p>
+<p>技能证书：<br>大学英语四/六级(CET-4/6)     机动车驾驶证    计算机二级证书<br>管理学学位证    互联网项目创新创业大赛校级一等奖   HTML5前端开发工程师<br>Web全栈研发工程师   企业级Web应用研发工程师   JS开发工程师<br>Web应用架构工程师   混合APP高级开发工程师   移动端Web开发工程师<br>前端Web技术工程师   服务端运维工程师   高级运维工程师</p>
+<p>自我评价:<br>1.对前端技术具有浓厚的兴趣，喜欢逛CSDN，博客园等技术论坛；<br>2.具备良好的审美能力，有良好的代码编程习惯；<br>3.学习适应能力强，愿意不断学习新知识丰富自己；<br>4.抗压能力强，有信心在不同的工作强度下进行开发工作；<br>5.性格随和，具有良好的团队合作精神。</p>
+<p> </p>
+
         </div>
         
         
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
-            <i class="icon icon-lg icon-share-alt"></i>
-        </a>
         
     </div>
-</header>
-<header class="content-header index-header">
-
-    <div class="container fade-scale">
-        <h1 class="title">Cherry的个人博客</h1>
-        <h5 class="subtitle">
-            
-                
-            
-        </h5>
-    </div>
-
-    
-
-
-</header>
-
-<div class="container body-wrap">
-
-    <ul class="post-list">
-    
-        <li class="post-list-item fade">
-            <article id="post-谢宇莲的个人简历" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-09-06 16:45:00" datetime="2019-09-06T08:45:00.000Z" itemprop="datePublished">2019-09-06</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/个人简历/">个人简历</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/09/06/谢宇莲的个人简历/">谢宇莲的个人简历</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        谢宇莲性    别：女联系方式：18437979252邮    箱：13208295650@163.com现居地址：四川成都出生年月：1995.12年    龄：24岁工作年限：2年
-专业技能：
-
-熟悉W3C标准和Web语义化，能熟练运用HTML5，CSS3及其新特性编写兼容主流浏览器的页面布局；2.能适当运用CSS3使页面在现代浏览器上效果更佳；
-熟练运用rem单位和flex布局实现不同浏览器宽度下的整页缩放；4.熟练使用photoshop软件进行简单的图片处理，能根据图片特征保存成最优...
-    
-
-        <a href="/2019/09/06/谢宇莲的个人简历/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/个人简历/">个人简历</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-购物车功能（jquery,实现单选，全选，小计，总计，删除）" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-09-01 09:23:00" datetime="2019-09-01T01:23:00.000Z" itemprop="datePublished">2019-09-01</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/09/01/购物车功能（jquery,实现单选，全选，小计，总计，删除）/">常用功能（一），购物车功能（jquery,实现单选，全选，小计，总计，删除）</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        以下是一个简单的购物车功能的demo，在接下来的博客里，我会陆续写到我们经常会用到的各种功能哟！HTML:12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010...
-    
-
-        <a href="/2019/09/01/购物车功能（jquery,实现单选，全选，小计，总计，删除）/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Html/">Html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jquery/">Jquery</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Vue 面试题，内含详细讲解" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-22 23:23:00" datetime="2019-07-22T15:23:00.000Z" itemprop="datePublished">2019-07-22</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/22/Vue 面试题，内含详细讲解/">Vue 面试题，内含详细讲解</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行页面的重新加载或跳转；取而代之的是利用路由机制实现 HTML 内容的变换，UI 与用户的交互，避免页面的重新加载。优点：用户体验好、快，内容的改变不需要重新加载整个页面，避免了不必要的跳转和重复渲染；基于上面一点，SPA 相对对服务器压力小；前...
-    
-
-        <a href="/2019/07/22/Vue 面试题，内含详细讲解/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Html/">Html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-一个简单的Jquery轮播图" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-05-22 23:23:00" datetime="2019-05-22T15:23:00.000Z" itemprop="datePublished">2019-05-22</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/前端开发/">前端开发</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/05/22/一个简单的Jquery轮播图/">一个简单的jquery轮播图</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        Html：1234567891011121314151617181920&lt;div class="slideBox"&gt;    &lt;ul&gt;    &lt;li&gt;&lt;img src="image/Lslide3.jpg" alt="" width="300" height="480"/&gt;&lt;/li&gt;    &lt;li&gt;&lt;img src="image/Lslide4.jpg" alt="" width="300" height="480...
-    
-
-        <a href="/2019/05/22/一个简单的Jquery轮播图/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Html/">Html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jquery/">Jquery</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-    </ul>
-
-    
-
 </div>
 
-        <footer class="footer">
-    <div class="top">
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
         
-<p>
-    <span id="busuanzi_container_site_uv" style="display:none">
-        站点总访客数：<span id="busuanzi_value_site_uv"></span>
-    </span>
-    <span id="busuanzi_container_site_pv" style="display:none">
-        站点总访问量：<span id="busuanzi_value_site_pv"></span>
-    </span>
-</p>
-
-
-        <p>
-            
-            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
-        </p>
-    </div>
-    <div class="bottom">
-        <p><span>Cherry Xie &copy; 2015 - 2019</span>
-            <span>
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-01T01:23:00.000Z">2019-09-01</time>
                 
-                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 分钟 read (About 745 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/09/01/购物车功能（jquery,实现单选，全选，小计，总计，删除）/">常用功能（一），购物车功能（jquery,实现单选，全选，小计，总计，删除）</a>
+            
+        </h1>
+        <div class="content">
+            <p>以下是一个简单的购物车功能的demo，在接下来的博客里，我会陆续写到我们经常会用到的各种功能哟！<br>HTML:<br><figure class="highlight hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 利用table标签简单创建样式 --&gt;</span><br><span class="line">  &lt;table&gt;</span><br><span class="line">    &lt;thead&gt;</span><br><span class="line">      &lt;tr&gt;</span><br><span class="line">        &lt;th&gt;</span><br><span class="line">          &lt;input class="all_ck" type="checkbox"&gt;全选&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;商品&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;单价&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;数量&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;小计&lt;/th&gt;</span><br><span class="line">        &lt;th&gt;操作&lt;/th&gt;</span><br><span class="line">      &lt;/tr&gt;</span><br><span class="line">    &lt;/thead&gt;</span><br><span class="line">    &lt;tbody&gt;</span><br><span class="line">      &lt;tr&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ck_box"</span> type=<span class="hljs-string">"checkbox"</span>&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"goods"</span>&gt;</span><br><span class="line">          &lt;img src=<span class="hljs-string">"img/2.jpg"</span> align=<span class="hljs-string">"left"</span>&gt;</span><br><span class="line">          &lt;span&gt;三只松鼠-碧根果210g&lt;/span&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td class="td_d price"&gt;￥38.90&lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;button class="minus"&gt;-&lt;/button&gt;</span><br><span class="line">          &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"num"</span> value=<span class="hljs-string">"1"</span> type=<span class="hljs-string">"text"</span>&gt;</span><br><span class="line">          &lt;button class="add"&gt;+&lt;/button&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td class="td_d smallprice"&gt;￥38.90&lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;button class="delet"&gt;删除&lt;/button&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">      &lt;/tr&gt;</span><br><span class="line">      &lt;tr&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ck_box"</span> type=<span class="hljs-string">"checkbox"</span>&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"goods"</span>&gt;</span><br><span class="line">          &lt;img src=<span class="hljs-string">"img/2.jpg"</span> align=<span class="hljs-string">"left"</span>&gt;</span><br><span class="line">          &lt;span&gt;三只松鼠-碧根果210g&lt;/span&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td class="td_d price"&gt;￥38.90&lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;button class="minus"&gt;-&lt;/button&gt;</span><br><span class="line">          &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"num"</span> value=<span class="hljs-string">"1"</span> type=<span class="hljs-string">"text"</span>&gt;</span><br><span class="line">          &lt;button class="add"&gt;+&lt;/button&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td class="td_d smallprice"&gt;￥38.90&lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;button class="delet"&gt;删除&lt;/button&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">      &lt;/tr&gt;</span><br><span class="line">      &lt;tr&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ck_box"</span> type=<span class="hljs-string">"checkbox"</span>&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"goods"</span>&gt;</span><br><span class="line">          &lt;img src=<span class="hljs-string">"img/2.jpg"</span> align=<span class="hljs-string">"left"</span>&gt;</span><br><span class="line">          &lt;span&gt;三只松鼠-碧根果210g&lt;/span&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td class="td_d price"&gt;￥38.90&lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;button class="minus"&gt;-&lt;/button&gt;</span><br><span class="line">          &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"num"</span> value=<span class="hljs-string">"1"</span> type=<span class="hljs-string">"text"</span>&gt;</span><br><span class="line">          &lt;button class="add"&gt;+&lt;/button&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td class="td_d smallprice"&gt;￥38.90&lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;button class="delet"&gt;删除&lt;/button&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">      &lt;/tr&gt;</span><br><span class="line">      &lt;tr&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ck_box"</span> type=<span class="hljs-string">"checkbox"</span>&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"goods"</span>&gt;</span><br><span class="line">          &lt;img src=<span class="hljs-string">"img/2.jpg"</span> align=<span class="hljs-string">"left"</span>&gt;</span><br><span class="line">          &lt;span&gt;三只松鼠-碧根果210g&lt;/span&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td class="td_d price"&gt;￥38.90&lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;button class="minus"&gt;-&lt;/button&gt;</span><br><span class="line">          &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"num"</span> value=<span class="hljs-string">"1"</span> type=<span class="hljs-string">"text"</span>&gt;</span><br><span class="line">          &lt;button class="add"&gt;+&lt;/button&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td class="td_d smallprice"&gt;￥38.90&lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;button class="delet"&gt;删除&lt;/button&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">      &lt;/tr&gt;</span><br><span class="line">      &lt;tr&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ck_box"</span> type=<span class="hljs-string">"checkbox"</span>&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"goods"</span>&gt;</span><br><span class="line">          &lt;img src=<span class="hljs-string">"img/2.jpg"</span> align=<span class="hljs-string">"left"</span>&gt;</span><br><span class="line">          &lt;span&gt;三只松鼠-碧根果210g&lt;/span&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td class="td_d price"&gt;￥38.90&lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;button class="minus"&gt;-&lt;/button&gt;</span><br><span class="line">          &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"num"</span> value=<span class="hljs-string">"1"</span> type=<span class="hljs-string">"text"</span>&gt;</span><br><span class="line">          &lt;button class="add"&gt;+&lt;/button&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">        &lt;td class="td_d smallprice"&gt;￥38.90&lt;/td&gt;</span><br><span class="line">        &lt;td <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"td_d"</span>&gt;</span><br><span class="line">          &lt;button class="delet"&gt;删除&lt;/button&gt;</span><br><span class="line">        &lt;/td&gt;</span><br><span class="line">      &lt;/tr&gt;</span><br><span class="line">    &lt;/tbody&gt;</span><br><span class="line">    &lt;tfoot&gt;</span><br><span class="line">      &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;总计&lt;/td&gt;</span><br><span class="line">        &lt;td colspan="5" class="totalPrice"&gt;￥0.00&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">      &lt;/tr&gt;</span><br><span class="line">    &lt;/tfoot&gt;</span><br><span class="line">  &lt;/table&gt;</span><br></pre></td></tr></table></figure></p>
+<p>Style:<br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">table &#123;</span><br><span class="line">      border-collapse: collapse;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    table td &#123;</span><br><span class="line">      vertical-align: middle;</span><br><span class="line">      text-align: center;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    thead &#123;</span><br><span class="line">      border: <span class="hljs-number">1</span>px solid black;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    thead&gt;tr&gt;th &#123;</span><br><span class="line">      border: <span class="hljs-number">1</span>px solid black;</span><br><span class="line">      padding: <span class="hljs-number">5</span>px <span class="hljs-number">20</span>px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    tbody&gt;tr&gt;td &#123;</span><br><span class="line">      border: <span class="hljs-number">1</span>px solid black;</span><br><span class="line">      padding: <span class="hljs-number">5</span>px <span class="hljs-number">20</span>px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    input[<span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"num"</span>] &#123;</span><br><span class="line">      width: <span class="hljs-number">24</span>px;</span><br><span class="line">      text-align: center;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    td[<span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"goods"</span>]&gt;img &#123;</span><br><span class="line">      width: <span class="hljs-number">70</span>px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    td[<span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"goods"</span>]&gt;span &#123;</span><br><span class="line">      vertical-align: middle;</span><br><span class="line">      display: inline-block;</span><br><span class="line">      transform: translate(<span class="hljs-number">5</span>px, <span class="hljs-number">29</span>px)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    tfoot td &#123;</span><br><span class="line">      border: <span class="hljs-number">1</span>px solid black;</span><br><span class="line">      font-weight: <span class="hljs-number">700</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>JavaScript:<br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//首先实现全选和单选功能</span></span><br><span class="line">    <span class="hljs-comment">//全选功能首先要判断是否具有checked属性；在jquery中设置或返回被选择元素属性有两种方法attr()和prop();</span></span><br><span class="line">    <span class="hljs-comment">//需要注意的是attr()并不能用来检测checked是否被选中，他会返回undefined值，即并不能使用attr()方法获取checked属性；那么这里只能用prop()属性获取checked属性，但是注意，所返回的并不是checked/null,而true/false，所以在判断/设置单选框是否被选中时也需要用true/false；</span></span><br><span class="line">    $(<span class="hljs-string">".all_ck"</span>).click(function () &#123;</span><br><span class="line">      <span class="hljs-comment">//判断是否选中</span></span><br><span class="line">      <span class="hljs-keyword">if</span> ($(<span class="hljs-keyword">this</span>).prop(<span class="hljs-string">"checked"</span>)) &#123; <span class="hljs-comment">//true</span></span><br><span class="line">        $(<span class="hljs-string">".ck_box"</span>).prop(&#123;  <span class="hljs-comment">//隐式迭代  链式操作</span></span><br><span class="line">          checked: <span class="hljs-keyword">true</span></span><br><span class="line">        &#125;).parents(<span class="hljs-string">"tr"</span>).css(<span class="hljs-string">"backgroundColor"</span>, <span class="hljs-string">"grey"</span>);</span><br><span class="line">      &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">        $(<span class="hljs-string">".ck_box"</span>).prop(&#123;  <span class="hljs-comment">//隐式迭代  链式操作</span></span><br><span class="line">          checked: <span class="hljs-keyword">false</span></span><br><span class="line">        &#125;).parents(<span class="hljs-string">"tr"</span>).css(<span class="hljs-string">"backgroundColor"</span>, <span class="hljs-string">""</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="hljs-comment">//单选</span></span><br><span class="line">    <span class="hljs-keyword">var</span> trueArr = []</span><br><span class="line">    $(<span class="hljs-string">".ck_box"</span>).click(function () &#123;</span><br><span class="line">      <span class="hljs-keyword">var</span> flag = $(<span class="hljs-keyword">this</span>).prop(<span class="hljs-string">"checked"</span>)</span><br><span class="line">      <span class="hljs-keyword">var</span> CL = $(<span class="hljs-string">".ck_box"</span>).length;<span class="hljs-comment">//主要是要判断列表长度和被选中的单选框长度是否相等，如果相等就表示全选了</span></span><br><span class="line">      <span class="hljs-keyword">var</span> CH = $(<span class="hljs-string">".ck_box:checked"</span>).length</span><br><span class="line">      <span class="hljs-keyword">if</span> (CL == CH) &#123;</span><br><span class="line">        $(<span class="hljs-string">".all_ck"</span>).prop(<span class="hljs-string">"checked"</span>, <span class="hljs-keyword">true</span>)</span><br><span class="line">      &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">        $(<span class="hljs-string">".all_ck"</span>).prop(<span class="hljs-string">"checked"</span>, <span class="hljs-keyword">false</span>)</span><br><span class="line">      &#125;</span><br><span class="line">      totalPrice();</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment">//三、数量事件：加减按钮的事件和输入数量的事件</span></span><br><span class="line">    <span class="hljs-comment">//1.加减事件和js的一样，只是这里添加了输入数量的事件，注意需要判读输入的值必须是数字不能是字符。可以用失焦blur()方法实现，也可以用按键事件，这里使用了keypress()和keyup();(按下、抬起事件)</span></span><br><span class="line">    <span class="hljs-comment">//注意：获取输入框value值使用的是val()方法</span></span><br><span class="line">    <span class="hljs-comment">//数量 </span></span><br><span class="line"></span><br><span class="line">    $(<span class="hljs-string">".minus"</span>).each(function () &#123;</span><br><span class="line">      $(<span class="hljs-keyword">this</span>).click(function () &#123;</span><br><span class="line">        <span class="hljs-keyword">var</span> number = $(<span class="hljs-keyword">this</span>).siblings(<span class="hljs-string">".num"</span>).val();</span><br><span class="line">        <span class="hljs-keyword">var</span> price = $(<span class="hljs-keyword">this</span>).parent().siblings(<span class="hljs-string">".price"</span>).html().slice(<span class="hljs-number">1</span>)</span><br><span class="line">        <span class="hljs-keyword">if</span> (number &gt;= <span class="hljs-number">1</span>) &#123;</span><br><span class="line">          number--;</span><br><span class="line">        &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">          number = <span class="hljs-number">0</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        $(<span class="hljs-keyword">this</span>).siblings(<span class="hljs-string">".num"</span>).val(number &lt; <span class="hljs-number">1</span> &amp;&amp; number &gt;= <span class="hljs-number">0</span> ? <span class="hljs-number">0</span> : number);</span><br><span class="line">        $(<span class="hljs-keyword">this</span>).parent().siblings(<span class="hljs-string">".smallprice"</span>).html(<span class="hljs-string">"￥"</span> + (price * number).toFixed(<span class="hljs-number">2</span>))</span><br><span class="line">        totalPrice();</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;);</span><br><span class="line">    $(<span class="hljs-string">".add"</span>).each(function () &#123;</span><br><span class="line">      $(<span class="hljs-keyword">this</span>).click(function () &#123;</span><br><span class="line">        <span class="hljs-keyword">var</span> number = $(<span class="hljs-keyword">this</span>).siblings(<span class="hljs-string">".num"</span>).val();</span><br><span class="line">        <span class="hljs-keyword">var</span> price = $(<span class="hljs-keyword">this</span>).parent().siblings(<span class="hljs-string">".price"</span>).html().slice(<span class="hljs-number">1</span>)</span><br><span class="line">        number++;</span><br><span class="line">        $(<span class="hljs-keyword">this</span>).siblings(<span class="hljs-string">".num"</span>).val(number);</span><br><span class="line">        $(<span class="hljs-keyword">this</span>).parent().siblings(<span class="hljs-string">".smallprice"</span>).html(<span class="hljs-string">"￥"</span> + (price * number).toFixed(<span class="hljs-number">2</span>))</span><br><span class="line">        totalPrice()</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="hljs-comment">//总计</span></span><br><span class="line">    <span class="hljs-function">function <span class="hljs-title">totalPrice</span><span class="hljs-params">()</span> </span>&#123;</span><br><span class="line">      <span class="hljs-keyword">var</span> totalPrice = <span class="hljs-number">0</span></span><br><span class="line">      <span class="hljs-keyword">var</span> a = <span class="hljs-number">0</span></span><br><span class="line">      <span class="hljs-comment">//总计等于每个被勾选的小计加起来的和</span></span><br><span class="line">      $(<span class="hljs-string">".ck_box"</span>).each(function () &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.checked == <span class="hljs-keyword">true</span>) &#123;</span><br><span class="line">          a = $(<span class="hljs-keyword">this</span>).parent().next().next().next().next().html().slice(<span class="hljs-number">1</span>)</span><br><span class="line">          totalPrice += Number(a)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">      $(<span class="hljs-string">".totalPrice"</span>).html(<span class="hljs-string">"￥"</span> + totalPrice.toFixed(<span class="hljs-number">2</span>))</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-comment">//删除</span></span><br><span class="line">    $(<span class="hljs-string">".delet"</span>).click(function () &#123;</span><br><span class="line">      $(<span class="hljs-keyword">this</span>).parent().parent().remove()</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-07-22T15:23:00.000Z">2019-07-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    11 分钟 read (About 1606 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/07/22/Vue 面试题，内含详细讲解/">Vue 面试题，内含详细讲解</a>
+            
+        </h1>
+        <div class="content">
+            <p>1、说说你对 SPA 单页面的理解，它的优缺点分别是什么？<br>SPA（ single-page application ）仅在 Web 页面初始化时加载相应的 HTML、JavaScript 和 CSS。一旦页面加载完成，SPA 不会因为用户的操作而进行页面的重新加载或跳转；取而代之的是利用路由机制实现 HTML 内容的变换，UI 与用户的交互，避免页面的重新加载。<br>优点：<br>用户体验好、快，内容的改变不需要重新加载整个页面，避免了不必要的跳转和重复渲染；<br>基于上面一点，SPA 相对对服务器压力小；<br>前后端职责分离，架构清晰，前端进行交互逻辑，后端负责数据处理；<br>缺点：<br>初次加载耗时多：为实现单页 Web 应用功能及显示效果，需要在加载页面的时候将 JavaScript、CSS 统一加载，部分页面按需加载；<br>前进后退路由管理：由于单页应用在一个页面中显示所有的内容，所以不能使用浏览器的前进后退功能，所有的页面切换需要自己建立堆栈管理；<br>SEO 难度较大：由于所有的内容都在一个页面中动态替换显示，所以在 SEO 上其有着天然的弱势。</p>
+<p>2、v-show 与 v-if 有什么区别？<br>v-if 是真正的条件渲染，因为它会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建；也是惰性的：如果在初始渲染时条件为假，则什么也不做——直到条件第一次变为真时，才会开始渲染条件块。<br>v-show 就简单得多——不管初始条件是什么，元素总是会被渲染，并且只是简单地基于 CSS 的 “display” 属性进行切换。<br>所以，v-if 适用于在运行时很少改变条件，不需要频繁切换条件的场景；v-show 则适用于需要非常频繁切换条件的场景。</p>
+<p>3、Class 与 Style 如何动态绑定？<br>Class 可以通过对象语法和数组语法进行动态绑定：<br>对象语法：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div v-bind:class=&quot;&#123; active: isActive, &apos;text-danger&apos;: hasError &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">data: &#123;</span><br><span class="line">  isActive: true,</span><br><span class="line">  hasError: false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>数组语法：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div v-bind:class=&quot;[isActive ? activeClass : &apos;&apos;, errorClass]&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">data: &#123;</span><br><span class="line">  activeClass: &apos;active&apos;,</span><br><span class="line">  errorClass: &apos;text-danger&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Style 也可以通过对象语法和数组语法进行动态绑定：<br>对象语法：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div v-bind:style=&quot;&#123; color: activeColor, fontSize: fontSize + &apos;px&apos; &#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">data: &#123;</span><br><span class="line">  activeColor: &apos;red&apos;,</span><br><span class="line">  fontSize: 30</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>数组语法：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div v-bind:style=&quot;[styleColor, styleSize]&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">data: &#123;</span><br><span class="line">  styleColor: &#123;</span><br><span class="line">     color: &apos;red&apos;</span><br><span class="line">   &#125;,</span><br><span class="line">  styleSize:&#123;</span><br><span class="line">     fontSize:&apos;23px&apos;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>4、怎样理解 Vue 的单向数据流？<br>所有的 prop 都使得其父子 prop 之间形成了一个单向下行绑定 ：父级 prop 的更新会向下流动到子组件中，但是反过来则不行。这样会防止从子组件意外改变父级组件的状态，从而导致你的应用的数据流向难以理解。<br>额外的，每次父级组件发生更新时，子组件中所有的 prop 都将会刷新为最新的值。这意味着你不应该在一个子组件内部改变 prop。如果你这样做了，Vue 会在浏览器的控制台中发出警告。子组件想修改时，只能通过 $emit 派发一个自定义事件，父组件接收到后，由父组件修改。<br>有两种常见的试图改变一个 prop 的情形 :<br>这个 prop 用来传递一个初始值；这个子组件接下来希望将其作为一个本地的 prop 数据来使用。 在这种情况下，最好定义一个本地的 data 属性并将这个 prop 用作其初始值：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">props: [&apos;initialCounter&apos;],</span><br><span class="line">data: function () &#123;</span><br><span class="line">  return &#123;</span><br><span class="line">    counter: this.initialCounter</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这个 prop 以一种原始的值传入且需要进行转换。 在这种情况下，最好使用这个 prop 的值来定义一个计算属性<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">props: [&apos;size&apos;],</span><br><span class="line">computed: &#123;</span><br><span class="line">  normalizedSize: function () &#123;</span><br><span class="line">    return this.size.trim().toLowerCase()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>5、computed 和 watch 的区别和运用的场景？<br>computed： 是计算属性，依赖其它属性值，并且 computed 的值有缓存，只有它依赖的属性值发生改变，下一次获取 computed 的值时才会重新计算 computed 的值；<br>watch： 更多的是「观察」的作用，类似于某些数据的监听回调 ，每当监听的数据变化时都会执行回调进行后续操作；<br>运用场景：<br>当我们需要进行数值计算，并且依赖于其它数据时，应该使用 computed，因为可以利用 computed 的缓存特性，避免每次获取值时，都要重新计算；<br>当我们需要在数据变化时执行异步或开销较大的操作时，应该使用 watch，使用 watch 选项允许我们执行异步操作 ( 访问一个 API )，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的。</p>
+<p>6、直接给一个数组项赋值，Vue 能检测到变化吗？<br>由于 JavaScript 的限制，Vue 不能检测到以下数组的变动：<br>当你利用索引直接设置一个数组项时，例如：vm.items[indexOfItem] = newValue<br>当你修改数组的长度时，例如：vm.items.length = newLength<br>为了解决第一个问题，Vue 提供了以下操作方法：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// Vue.set</span><br><span class="line">Vue.set(vm.items, indexOfItem, newValue)</span><br><span class="line">// vm.$set，Vue.set的一个别名</span><br><span class="line">vm.$set(vm.items, indexOfItem, newValue)</span><br><span class="line">// Array.prototype.splice</span><br><span class="line">vm.items.splice(indexOfItem, 1, newValue)</span><br></pre></td></tr></table></figure></p>
+<p>为了解决第二个问题，Vue 提供了以下操作方法：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// Array.prototype.splice</span><br><span class="line">vm.items.splice(newLength)</span><br></pre></td></tr></table></figure></p>
+<p>7、谈谈你对 Vue 生命周期的理解？<br>（1）生命周期是什么？<br>Vue 实例有一个完整的生命周期，也就是从开始创建、初始化数据、编译模版、挂载 Dom -&gt; 渲染、更新 -&gt; 渲染、卸载等一系列过程，我们称这是 Vue 的生命周期。</p>
+<p>（2）各个生命周期的作用<br><img src="./img/Vue生命周期.jpg" alt="image text"></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-22T15:23:00.000Z">2019-05-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 read (About 444 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/05/22/一个简单的Jquery轮播图/">一个简单的jquery轮播图</a>
+            
+        </h1>
+        <div class="content">
+            <p>Html：<br><figure class="highlight hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"slideBox"</span>&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">    &lt;li&gt;&lt;img src="image/Lslide3.jpg" alt="" width="300" height="480"/&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;img src="image/Lslide4.jpg" alt="" width="300" height="480"/&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;img src="image/Lslide5.jpg" alt="" width="300" height="480"/&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;img src="image/Lslide6.jpg" alt="" width="300" height="480"/&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;img src="image/Lslide2.jpg" alt="" width="300" height="480"/&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;img src="image/Lslide1.jpg" alt="" width="300" height="480"/&gt;&lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">    &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"spanBox"</span>&gt;</span><br><span class="line">    &lt;span class="active"&gt;q&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;a&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;z&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;w&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;s&lt;/span&gt;</span><br><span class="line">    &lt;span&gt;x&lt;/span&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class="prev"&gt;&lt;img src="image/left_arrow.jpg" width="15" height="50" alt=""/&gt;&lt;/div&gt;</span><br><span class="line">    &lt;div class="next"&gt;&lt;img src="image/right_arrow.jpg" width="15" height="50" alt=""/&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>上面是html代码，代码的结构比较简单，ul标签是要左右移动的，所以怎么设置position属性？，然后span标签是提供索引和下标控制符，绑定动画的。prev和next类名的div标签是提供左右按钮。</p>
+<p>CSS:<br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">    padding:<span class="hljs-number">0</span>px;</span><br><span class="line">    border:<span class="hljs-number">0</span>px;</span><br><span class="line">    margin:<span class="hljs-number">0</span>px;</span><br><span class="line">&#125;</span><br><span class="line">ul &#123;</span><br><span class="line">    list-style:none;</span><br><span class="line">&#125;</span><br><span class="line">.slideBox &#123;</span><br><span class="line">    margin:<span class="hljs-number">50</span>px auto;</span><br><span class="line">    width:<span class="hljs-number">300</span>px;</span><br><span class="line">    height:<span class="hljs-number">480</span>px;</span><br><span class="line">    box-shadow:2px 2px 10px #C38DD4;</span><br><span class="line">    border-radius:<span class="hljs-number">20</span>px;</span><br><span class="line">    position:relative;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">&#125;</span><br><span class="line">.slideBox ul &#123;</span><br><span class="line">    position:relative;</span><br><span class="line">    width:<span class="hljs-number">2000</span>px;&#125;</span><br><span class="line">.slideBox ul li &#123;</span><br><span class="line">    <span class="hljs-keyword">float</span>:left;</span><br><span class="line">    width:<span class="hljs-number">300</span>px;</span><br><span class="line">    height:<span class="hljs-number">480</span>px;</span><br><span class="line">    position:relative;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">.spanBox &#123;</span><br><span class="line">    position:absolute;</span><br><span class="line">    width:<span class="hljs-number">300</span>px;</span><br><span class="line">    height:<span class="hljs-number">20</span>px;</span><br><span class="line">    bottom:<span class="hljs-number">10</span>px;</span><br><span class="line">    left:<span class="hljs-number">80</span>px;</span><br><span class="line">&#125;</span><br><span class="line">.spanBox span &#123;</span><br><span class="line">    width:<span class="hljs-number">18</span>px;</span><br><span class="line">    height:<span class="hljs-number">18</span>px;</span><br><span class="line">    margin-left:<span class="hljs-number">5</span>px;</span><br><span class="line">    background-color:rgba(<span class="hljs-number">201</span>,<span class="hljs-number">178</span>,<span class="hljs-number">207</span>,<span class="hljs-number">1.00</span>);</span><br><span class="line">    <span class="hljs-keyword">float</span>:left;</span><br><span class="line">    line-height:<span class="hljs-number">16</span>px;</span><br><span class="line">    text-align:center;</span><br><span class="line">    text-shadow:2px 2px 2px #C5EBF0;</span><br><span class="line">    font-family:cabin-sketch;</span><br><span class="line">    font-size:<span class="hljs-number">15</span>px;</span><br><span class="line">&#125;</span><br><span class="line">.slideBox .spanBox .active &#123;</span><br><span class="line">    background-color:rgba(<span class="hljs-number">155</span>,<span class="hljs-number">83</span>,<span class="hljs-number">244</span>,<span class="hljs-number">0.79</span>);</span><br><span class="line">    border:solid 1px #BEEBEC;</span><br><span class="line">    border-radius:<span class="hljs-number">4</span>px;</span><br><span class="line">&#125;</span><br><span class="line">.prev &#123;</span><br><span class="line">    position:absolute;</span><br><span class="line">    left:<span class="hljs-number">0</span>px;</span><br><span class="line">    top:<span class="hljs-number">320</span>px;</span><br><span class="line">    <span class="hljs-keyword">float</span>:left;</span><br><span class="line">    border-left:solid <span class="hljs-number">1</span><span class="hljs-function">px <span class="hljs-title">rgba</span><span class="hljs-params">(<span class="hljs-number">251</span>,<span class="hljs-number">245</span>,<span class="hljs-number">246</span>,<span class="hljs-number">1.00</span>)</span></span>;</span><br><span class="line">    opacity:<span class="hljs-number">0.5</span>;</span><br><span class="line">&#125;</span><br><span class="line">.next &#123;</span><br><span class="line">    width:<span class="hljs-number">15</span>px;</span><br><span class="line">    height:<span class="hljs-number">50</span>px;</span><br><span class="line">    position:absolute;</span><br><span class="line">    right:<span class="hljs-number">0</span>px;</span><br><span class="line">    top:<span class="hljs-number">320</span>px;</span><br><span class="line">    <span class="hljs-keyword">float</span>:right;</span><br><span class="line">    border-right:solid <span class="hljs-number">1</span><span class="hljs-function">px <span class="hljs-title">rgba</span><span class="hljs-params">(<span class="hljs-number">245</span>,<span class="hljs-number">237</span>,<span class="hljs-number">237</span>,<span class="hljs-number">1.00</span>)</span></span>;</span><br><span class="line">    opacity:<span class="hljs-number">0.5</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Jquery:<br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(function()&#123;</span><br><span class="line">     <span class="hljs-keyword">var</span> slideBox = $(<span class="hljs-string">".slideBox"</span>);</span><br><span class="line">     <span class="hljs-keyword">var</span> ul = slideBox.find(<span class="hljs-string">"ul"</span>);</span><br><span class="line">     <span class="hljs-keyword">var</span> oneWidth = slideBox.find(<span class="hljs-string">"ul li"</span>).eq(<span class="hljs-number">0</span>).width();</span><br><span class="line">     <span class="hljs-keyword">var</span> number = slideBox.find(<span class="hljs-string">".spanBox span"</span>);<span class="hljs-comment">//注意分号 和逗号的用法</span></span><br><span class="line">     <span class="hljs-keyword">var</span> timer = <span class="hljs-keyword">null</span>;</span><br><span class="line">     <span class="hljs-keyword">var</span> sw = <span class="hljs-number">0</span>;                    </span><br><span class="line">     <span class="hljs-comment">//每个span绑定click事件，完成切换颜色和动画，以及读取参数值</span></span><br><span class="line">     number.on(<span class="hljs-string">"click"</span>,function ()&#123;</span><br><span class="line">     $(<span class="hljs-keyword">this</span>).addClass(<span class="hljs-string">"active"</span>).siblings(<span class="hljs-string">"span"</span>).removeClass(<span class="hljs-string">"active"</span>);</span><br><span class="line">     sw=$(<span class="hljs-keyword">this</span>).index();</span><br><span class="line">     ul.animate(&#123;</span><br><span class="line">            <span class="hljs-string">"right"</span>:oneWidth*sw,<span class="hljs-comment">//ul标签的动画为向左移动；</span></span><br><span class="line">               &#125;);</span><br><span class="line">     &#125;);</span><br><span class="line">     <span class="hljs-comment">//左右按钮的控制效果</span></span><br><span class="line">     $(<span class="hljs-string">".next"</span>).stop(<span class="hljs-keyword">true</span>,<span class="hljs-keyword">true</span>).click(function ()&#123;</span><br><span class="line">         sw++;</span><br><span class="line">         <span class="hljs-keyword">if</span>(sw==number.length)&#123;sw=<span class="hljs-number">0</span>&#125;;</span><br><span class="line">         number.eq(sw).trigger(<span class="hljs-string">"click"</span>);</span><br><span class="line">         &#125;);</span><br><span class="line">    $(<span class="hljs-string">".prev"</span>).stop(<span class="hljs-keyword">true</span>,<span class="hljs-keyword">true</span>).click(function ()&#123;</span><br><span class="line">        sw--;</span><br><span class="line">        <span class="hljs-keyword">if</span>(sw==number.length)&#123;sw=<span class="hljs-number">0</span>&#125;;</span><br><span class="line">        number.eq(sw).trigger(<span class="hljs-string">"click"</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">    <span class="hljs-comment">//定时器的使用，自动开始</span></span><br><span class="line">    timer = setInterval(function ()&#123;</span><br><span class="line">        sw++;</span><br><span class="line">        <span class="hljs-keyword">if</span>(sw==number.length)&#123;sw=<span class="hljs-number">0</span>&#125;;</span><br><span class="line">        number.eq(sw).trigger(<span class="hljs-string">"click"</span>);</span><br><span class="line">        &#125;,<span class="hljs-number">2000</span>);</span><br><span class="line">    <span class="hljs-comment">//hover事件完成悬停和，左右图标的动画效果</span></span><br><span class="line">    slideBox.hover(function()&#123;</span><br><span class="line">        $(<span class="hljs-string">".next,.prev"</span>).animate(&#123;</span><br><span class="line">            <span class="hljs-string">"opacity"</span>:<span class="hljs-number">1</span>,</span><br><span class="line">            &#125;,<span class="hljs-number">200</span>);</span><br><span class="line">        clearInterval(timer);</span><br><span class="line">        &#125;,function()&#123;</span><br><span class="line">            $(<span class="hljs-string">".next,.prev"</span>).animate(&#123;</span><br><span class="line">                <span class="hljs-string">"opacity"</span>:<span class="hljs-number">0.5</span>,</span><br><span class="line">                &#125;,<span class="hljs-number">500</span>);</span><br><span class="line">        timer = setInterval(function ()&#123;</span><br><span class="line">        sw++;</span><br><span class="line">        <span class="hljs-keyword">if</span>(sw==number.length)&#123;sw=<span class="hljs-number">0</span>&#125;;</span><br><span class="line">        number.eq(sw).trigger(<span class="hljs-string">"click"</span>);</span><br><span class="line">        &#125;,<span class="hljs-number">2000</span>);</span><br><span class="line">            &#125;)</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img  src="/images/1.jpg" alt="谢宇莲">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        谢宇莲
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        一个进阶中的WEB小迷妹
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>四川成都</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Posts
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        4
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Categories
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        2
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Tags
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        5
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/sunray1017" target="_blank">
+                Follow</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Github" href="https://github.com/ppoffice">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Facebook" href="https://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Twitter" href="https://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="Dribbble" href="https://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank"
+                title="RSS" href="/">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+        
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Links
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://github.com/sunray1017" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">PPOffice</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">github.com</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Categories
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/个人简历/">
+            <span class="level-start">
+                <span class="level-item">个人简历</span>
             </span>
-        </p>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/前端开发/">
+            <span class="level-start">
+                <span class="level-item">前端开发</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Tag Cloud
+        </h3>
+        <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/Html/" style="font-size: 20px;">Html</a> <a href="/tags/Jquery/" style="font-size: 15px;">Jquery</a> <a href="/tags/Vue/" style="font-size: 10px;">Vue</a> <a href="/tags/个人简历/" style="font-size: 10px;">个人简历</a>
+    </div>
+</div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recent
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/09/06/谢宇莲的个人简历/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="谢宇莲的个人简历">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-06T08:45:00.000Z">2019-09-06</time></div>
+                    <a href="/2019/09/06/谢宇莲的个人简历/" class="title has-link-black-ter is-size-6 has-text-weight-normal">谢宇莲的个人简历</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/个人简历/">个人简历</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/09/01/购物车功能（jquery,实现单选，全选，小计，总计，删除）/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="常用功能（一），购物车功能（jquery,实现单选，全选，小计，总计，删除）">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-01T01:23:00.000Z">2019-09-01</time></div>
+                    <a href="/2019/09/01/购物车功能（jquery,实现单选，全选，小计，总计，删除）/" class="title has-link-black-ter is-size-6 has-text-weight-normal">常用功能（一），购物车功能（jquery,实现单选，全选，小计，总计，删除）</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/07/22/Vue 面试题，内含详细讲解/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-22T15:23:00.000Z">2019-07-22</time></div>
+                    <a href="/2019/07/22/Vue 面试题，内含详细讲解/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/22/一个简单的Jquery轮播图/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="一个简单的jquery轮播图">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-22T15:23:00.000Z">2019-05-22</time></div>
+                    <a href="/2019/05/22/一个简单的Jquery轮播图/" class="title has-link-black-ter is-size-6 has-text-weight-normal">一个简单的jquery轮播图</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/07/">
+                <span class="level-start">
+                    <span class="level-item">July 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Tags
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/CSS/">
+                        <span class="tag">CSS</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Html/">
+                        <span class="tag">Html</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Jquery/">
+                        <span class="tag">Jquery</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Vue/">
+                        <span class="tag">Vue</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/个人简历/">
+                        <span class="tag">个人简历</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recent
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/09/06/谢宇莲的个人简历/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="谢宇莲的个人简历">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-06T08:45:00.000Z">2019-09-06</time></div>
+                    <a href="/2019/09/06/谢宇莲的个人简历/" class="title has-link-black-ter is-size-6 has-text-weight-normal">谢宇莲的个人简历</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/个人简历/">个人简历</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/09/01/购物车功能（jquery,实现单选，全选，小计，总计，删除）/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="常用功能（一），购物车功能（jquery,实现单选，全选，小计，总计，删除）">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-01T01:23:00.000Z">2019-09-01</time></div>
+                    <a href="/2019/09/01/购物车功能（jquery,实现单选，全选，小计，总计，删除）/" class="title has-link-black-ter is-size-6 has-text-weight-normal">常用功能（一），购物车功能（jquery,实现单选，全选，小计，总计，删除）</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/07/22/Vue 面试题，内含详细讲解/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-22T15:23:00.000Z">2019-07-22</time></div>
+                    <a href="/2019/07/22/Vue 面试题，内含详细讲解/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/05/22/一个简单的Jquery轮播图/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="一个简单的jquery轮播图">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-22T15:23:00.000Z">2019-05-22</time></div>
+                    <a href="/2019/05/22/一个简单的Jquery轮播图/" class="title has-link-black-ter is-size-6 has-text-weight-normal">一个简单的jquery轮播图</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/07/">
+                <span class="level-start">
+                    <span class="level-item">July 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Tags
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/CSS/">
+                        <span class="tag">CSS</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Html/">
+                        <span class="tag">Html</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Jquery/">
+                        <span class="tag">Jquery</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Vue/">
+                        <span class="tag">Vue</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/个人简历/">
+                        <span class="tag">个人简历</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="Cherry的个人博客" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Cherry Xie&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
     </div>
 </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
 
-    </main>
-    <div class="mask" id="mask"></div>
-<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
-
-
-
-<div class="global-share" id="globalShare">
-    <ul class="reset share-icons">
-      <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/&title=Cherry的个人博客&pic=http://yoursite.com/img/1.jpg" data-title="微博">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      <li>
-        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/&title=Cherry的个人博客&source=" data-title=" QQ">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/" data-title=" Facebook">
-          <i class="icon icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Cherry的个人博客&url=http://yoursite.com/&via=http://yoursite.com" data-title=" Twitter">
-          <i class="icon icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/" data-title=" Google+">
-          <i class="icon icon-google-plus"></i>
-        </a>
-      </li>
-    </ul>
- </div>
-
-
-<div class="page-modal wx-share" id="wxShare">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/" alt="微信分享二维码">
-</div>
-
-
-
-
-    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
-
-
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
 </script>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
 
 
-<div class="search-panel" id="search-panel">
-    <ul class="search-result" id="search-result"></ul>
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
 </div>
-<template id="search-tpl">
-<li class="item">
-    <a href="{path}" class="waves-block waves-effect">
-        <div class="title ellipsis" title="{title}">{title}</div>
-        <div class="flex-row flex-middle">
-            <div class="tags ellipsis">
-                {tags}
-            </div>
-            <time class="flex-col time">{date}</time>
-        </div>
-    </a>
-</li>
-</template>
-
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
-
-
-
-
-
-
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
 <script>
-(function() {
-    var OriginTitile = document.title, titleTime;
-    document.addEventListener('visibilitychange', function() {
-        if (document.hidden) {
-            document.title = '哈喽去哪里了！';
-            clearTimeout(titleTime);
-        } else {
-            document.title = '(つェ⊂)咦!又好了!';
-            titleTime = setTimeout(function() {
-                document.title = OriginTitile;
-            },2000);
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
         }
     });
-})();
+});
 </script>
 
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
 
 
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
 </body>
 </html>
