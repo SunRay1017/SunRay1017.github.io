@@ -7,18 +7,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Categorias - Cherry的个人博客</title>
+<title>简单的数据请求，利用jquery做的，解决了跨域问题 - Cherry的个人博客</title>
 
 
-    <meta name="keywords" content="Jquery,Html,CSS,Ajax,Vue,个人简历">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cherry的个人博客">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+    <meta name="description" content="这里就是简单的记录一下利用jquery请求数据的方法，这样能完美的解决跨域问题，简直太好了，页面什么的不用在意，就是随便拿了一个页面用，主要是看数据。 style:1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636">
+<meta name="keywords" content="Jquery,Html,CSS,Ajax">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简单的数据请求，利用jquery做的，解决了跨域问题">
+<meta property="og:url" content="http://yoursite.com/2019/09/26/简单的利用jquery做数据请求-解决了跨域问题/index.html">
 <meta property="og:site_name" content="Cherry的个人博客">
+<meta property="og:description" content="这里就是简单的记录一下利用jquery请求数据的方法，这样能完美的解决跨域问题，简直太好了，页面什么的不用在意，就是随便拿了一个页面用，主要是看数据。 style:1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:updated_time" content="2019-09-26T02:54:17.702Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cherry的个人博客">
+<meta name="twitter:title" content="简单的数据请求，利用jquery做的，解决了跨域问题">
+<meta name="twitter:description" content="这里就是简单的记录一下利用jquery请求数据的方法，这样能完美的解决跨域问题，简直太好了，页面什么的不用在意，就是随便拿了一个页面用，主要是看数据。 style:1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -89,7 +93,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Cherry的个人博客" height="28">
+                <img src="/images/logo.svg" alt="简单的数据请求，利用jquery做的，解决了跨域问题" height="28">
             
             </a>
         </div>
@@ -103,7 +107,7 @@
                 <a class="navbar-item"
                 href="/archives">归档</a>
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/categories">分类</a>
                 
                 <a class="navbar-item"
@@ -139,35 +143,110 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-<div class="card widget">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-26T02:23:00.000Z">2019-09-26</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 read (About 257 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                简单的数据请求，利用jquery做的，解决了跨域问题
+            
+        </h1>
+        <div class="content">
+            <p>这里就是简单的记录一下利用jquery请求数据的方法，这样能完美的解决跨域问题，简直太好了，页面什么的不用在意，就是随便拿了一个页面用，主要是看数据。</p>
+<p>style:<br><figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">.sma_container &#123;</span><br><span class="line">      width: <span class="hljs-number">380</span>px;</span><br><span class="line">      padding: <span class="hljs-number">5</span>px;</span><br><span class="line">      margin: <span class="hljs-number">5</span>px auto;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .top &#123;</span><br><span class="line">      display: flex;</span><br><span class="line">      justify-content: flex-start;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .top h3 &#123;</span><br><span class="line">      margin-left: <span class="hljs-number">130</span>px;</span><br><span class="line">      font-weight: <span class="hljs-number">50</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .top svg &#123;</span><br><span class="line">      transform: translateY(<span class="hljs-number">22</span>px);</span><br><span class="line">      cursor: pointer;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .down .ph_user,</span><br><span class="line">    .ph_pwd &#123;</span><br><span class="line">      border-bottom: <span class="hljs-number">1</span><span class="hljs-function">px solid <span class="hljs-title">rgb</span><span class="hljs-params">(<span class="hljs-number">175</span>, <span class="hljs-number">175</span>, <span class="hljs-number">175</span>)</span></span>;</span><br><span class="line">      width: <span class="hljs-number">85</span>%;</span><br><span class="line">      margin: <span class="hljs-number">5</span>px auto;</span><br><span class="line">      padding: <span class="hljs-number">10</span>px <span class="hljs-number">15</span>px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .ph_user input &#123;</span><br><span class="line">      width: <span class="hljs-number">100</span>%;</span><br><span class="line">      border: <span class="hljs-number">0</span>;</span><br><span class="line">      outline: none;</span><br><span class="line">      font-size: <span class="hljs-number">16</span>px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .ph_pwd input &#123;</span><br><span class="line">      width: <span class="hljs-number">70</span>%;</span><br><span class="line">      outline: none;</span><br><span class="line">      border: <span class="hljs-number">0</span>;</span><br><span class="line">      font-size: <span class="hljs-number">16</span>px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .ph_pwd span &#123;</span><br><span class="line">      display: inline-block;</span><br><span class="line">      width: <span class="hljs-number">70</span>px;</span><br><span class="line">      padding: <span class="hljs-number">10</span>px <span class="hljs-number">10</span>px;</span><br><span class="line">      background: red;</span><br><span class="line">      font-size: <span class="hljs-number">14</span>px;</span><br><span class="line">      border-radius: <span class="hljs-number">5</span>px;</span><br><span class="line">      color: white;</span><br><span class="line">      cursor: pointer;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .down .btn &#123;</span><br><span class="line">      width: <span class="hljs-number">90</span>%;</span><br><span class="line">      padding: <span class="hljs-number">10</span>px <span class="hljs-number">0</span>;</span><br><span class="line">      margin: <span class="hljs-number">15</span>px auto;</span><br><span class="line">      background: red;</span><br><span class="line">      border-radius: <span class="hljs-number">5</span>px;</span><br><span class="line">      text-align: center;</span><br><span class="line">      cursor: pointer;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .down .btn button &#123;</span><br><span class="line">      color: white;</span><br><span class="line">      font-size: <span class="hljs-number">18</span>px;</span><br><span class="line">      border: <span class="hljs-number">0</span>;</span><br><span class="line">      outline: none;</span><br><span class="line">      background: transparent;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>html:<br><figure class="highlight hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"sma_container"</span>&gt;</span><br><span class="line">    &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"top"</span>&gt;</span><br><span class="line">      &lt;svg t=<span class="hljs-string">"1568950194228"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"icon"</span> viewBox=<span class="hljs-string">"0 0 1024 1024"</span> version=<span class="hljs-string">"1.1"</span> xmlns=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> p-id=<span class="hljs-string">"1992"</span></span><br><span class="line">        width=<span class="hljs-string">"20"</span> height=<span class="hljs-string">"20"</span>&gt;</span><br><span class="line">        &lt;path d=<span class="hljs-string">"M913.92 145.92l-35.84-35.84L512 475.52 145.92 110.08l-35.84 35.84L475.52 512l-365.44 366.08 35.84 35.84L512 548.48l366.08 365.44 35.84-35.84L548.48 512z"</span></span><br><span class="line">          p-id="1993"&gt;&lt;/path&gt;</span><br><span class="line">      &lt;/svg&gt;</span><br><span class="line">      &lt;h3&gt;绑定手机号&lt;/h3&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"down"</span> style=<span class="hljs-string">"margin-top:25px"</span>&gt;</span><br><span class="line">      &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ph_user"</span>&gt;</span><br><span class="line">        &lt;input type=<span class="hljs-string">"phone"</span> placeholder=<span class="hljs-string">"请输入您的手机号"</span> /&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"ph_pwd"</span> style=<span class="hljs-string">"margin-top:15px"</span>&gt;</span><br><span class="line">        &lt;input type=<span class="hljs-string">"text"</span> placeholder=<span class="hljs-string">"请输入验证码"</span> /&gt;</span><br><span class="line">        &lt;span&gt;发送验证码&lt;/span&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn"</span>&gt;</span><br><span class="line">        &lt;button&gt;登录&lt;/button&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>javascript:</p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//这里是利用jquer请求数据，已经解决了跨域问题</span></span><br><span class="line">    $(<span class="hljs-string">".btn"</span>).click(function () &#123;</span><br><span class="line">      $.ajax(&#123;</span><br><span class="line">        type: <span class="hljs-string">"get"</span>,</span><br><span class="line">        url: <span class="hljs-string">"https://api.asilu.com/cloud-music/163/"</span>,</span><br><span class="line">        data: <span class="hljs-string">""</span>,</span><br><span class="line">        dataType: <span class="hljs-string">"jsonp"</span>,</span><br><span class="line">        crossDomain: <span class="hljs-keyword">true</span>,</span><br><span class="line">        jsonpCallback: <span class="hljs-string">"jsonpCallbackFun"</span>,</span><br><span class="line">        jsonp: <span class="hljs-string">"callback"</span>,</span><br><span class="line">        success: function (data) &#123;</span><br><span class="line">          console.log(data)</span><br><span class="line">        &#125;,</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Ajax/">Ajax</a>, <a class="has-link-grey -link" href="/tags/CSS/">CSS</a>, <a class="has-link-grey -link" href="/tags/Html/">Html</a>, <a class="has-link-grey -link" href="/tags/Jquery/">Jquery</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                Categorias
-            </h3>
-            <ul class="menu-list">
-            <li>
-        <a class="level is-marginless" href="/categories/个人简历/">
-            <span class="level-start">
-                <span class="level-item">个人简历</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/前端开发/">
-            <span class="level-start">
-                <span class="level-item">前端开发</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">4</span>
-            </span>
-        </a></li>
-            </ul>
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
+            
+                
+<div class="notification is-danger">
+    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
+</div>
+
+                
+                
+<div class="notification is-danger">
+    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
+</div>
+
+                
+                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
+
+<div class="notification is-danger">
+    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
+</div>
+
+                
+                
+<div class="notification is-danger">
+    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
+</div>
+
+                
         </div>
     </div>
-</div></div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/09/06/谢宇莲的个人简历/">
+                <span class="level-item">谢宇莲的个人简历</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
                 
 
 
@@ -806,7 +885,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Cherry的个人博客" height="28">
+                    <img src="/images/logo.svg" alt="简单的数据请求，利用jquery做的，解决了跨域问题" height="28">
                 
                 </a>
                 <p class="is-size-7">
