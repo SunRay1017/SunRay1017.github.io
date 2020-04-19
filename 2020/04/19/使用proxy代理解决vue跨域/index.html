@@ -7,22 +7,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Vue 面试题，内含详细讲解 - Cherry的个人博客</title>
+<title>简单的数据请求，利用jquery做的，解决了跨域问题 - Cherry的个人博客</title>
 
 
-    <meta name="description" content="一、关于继承的几种方式，包含6种1.原型链继承2.借用构造函数继承3.组合继承4.原型式继承5.寄生式继承6.寄生组合式继承 二、继承的使用场景">
-<meta name="keywords" content="JavaScript">
+    <meta name="description" content="方法： 使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：1234567891011&amp;apos;/api&amp;apos;: &amp;#123;        target:&amp;apos;http://localhost:8080&amp;apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址        changeOrigin:true">
+<meta name="keywords" content="Html,CSS,vue,Axios">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vue 面试题，内含详细讲解">
-<meta property="og:url" content="http://yoursite.com/2020/02/28/关于继承的几种方式/index.html">
+<meta property="og:title" content="简单的数据请求，利用jquery做的，解决了跨域问题">
+<meta property="og:url" content="http://yoursite.com/2020/04/19/使用proxy代理解决vue跨域/index.html">
 <meta property="og:site_name" content="Cherry的个人博客">
-<meta property="og:description" content="一、关于继承的几种方式，包含6种1.原型链继承2.借用构造函数继承3.组合继承4.原型式继承5.寄生式继承6.寄生组合式继承 二、继承的使用场景">
+<meta property="og:description" content="方法： 使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：1234567891011&amp;apos;/api&amp;apos;: &amp;#123;        target:&amp;apos;http://localhost:8080&amp;apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址        changeOrigin:true">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2020-02-28T05:39:37.613Z">
+<meta property="og:updated_time" content="2020-04-19T13:47:41.724Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vue 面试题，内含详细讲解">
-<meta name="twitter:description" content="一、关于继承的几种方式，包含6种1.原型链继承2.借用构造函数继承3.组合继承4.原型式继承5.寄生式继承6.寄生组合式继承 二、继承的使用场景">
+<meta name="twitter:title" content="简单的数据请求，利用jquery做的，解决了跨域问题">
+<meta name="twitter:description" content="方法： 使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：1234567891011&amp;apos;/api&amp;apos;: &amp;#123;        target:&amp;apos;http://localhost:8080&amp;apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址        changeOrigin:true">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -93,7 +93,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Vue 面试题，内含详细讲解" height="28">
+                <img src="/images/logo.svg" alt="简单的数据请求，利用jquery做的，解决了跨域问题" height="28">
             
             </a>
         </div>
@@ -149,7 +149,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time>
+                <time class="level-item has-text-grey" datetime="2020-04-19T02:23:00.000Z">2020-04-19</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
@@ -159,7 +159,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 read (About 58 words)
+                    2 分钟 read (About 251 words)
                 </span>
                 
                 
@@ -168,12 +168,19 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Vue 面试题，内含详细讲解
+                简单的数据请求，利用jquery做的，解决了跨域问题
             
         </h1>
         <div class="content">
-            <p>一、关于继承的几种方式，包含6种<br>1.原型链继承<br>2.借用构造函数继承<br>3.组合继承<br>4.原型式继承<br>5.寄生式继承<br>6.寄生组合式继承</p>
-<p>二、继承的使用场景</p>
+            <p>方法：</p>
+<p>使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&apos;/api&apos;: &#123;</span><br><span class="line">        target:&apos;http://localhost:8080&apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址</span><br><span class="line">        changeOrigin:true, // 在本地会创建一个虚拟服务端，然后发送请求的数据，并同时接收请求的数据，这样服务端和服务端进行数据的交互就不会有跨域问题</span><br><span class="line">        pathRewrite:&#123;  // 路径重写，</span><br><span class="line">          &apos;^/api&apos;: &apos;&apos;  // 替换target中的请求地址，也就是说以后你在请求http://api.douban.com/v2/XXXXX这个地址的时候直接写成/api即可。</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">``` </span><br><span class="line">并且在main.js中添加  axios.defaults.baseURL=&quot;/api&quot;;</span><br><span class="line"></span><br><span class="line">这样就解决跨域问题了，然后在你的vue页面请求数据时，就直接按原来的方式照写就行了。是不是很简单</span><br></pre></td></tr></table></figure></p>
+<p>requestData () {<br>      this.$axios.get(‘<a href="http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;).then" target="_blank" rel="noopener">http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;).then</a>(<br>        (res) =&gt; {<br>          console.log(res.data)</p>
+<pre><code>      this.lists = res.data.result
+    }
+
+  )
+}
+</code></pre><p><code>`</code></p>
 
         </div>
         
@@ -181,7 +188,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/JavaScript/">JavaScript</a>
+                    <a class="has-link-grey -link" href="/tags/Axios/">Axios</a>, <a class="has-link-grey -link" href="/tags/CSS/">CSS</a>, <a class="has-link-grey -link" href="/tags/Html/">Html</a>, <a class="has-link-grey -link" href="/tags/vue/">vue</a>
                 </div>
             </div>
         </div>
@@ -232,16 +239,9 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/04/19/使用proxy代理解决vue跨域/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">简单的数据请求，利用jquery做的，解决了跨域问题</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/02/28/闭包/">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/02/28/关于继承的几种方式/">
                 <span class="level-item">Vue 面试题，内含详细讲解</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
@@ -976,7 +976,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Vue 面试题，内含详细讲解" height="28">
+                    <img src="/images/logo.svg" alt="简单的数据请求，利用jquery做的，解决了跨域问题" height="28">
                 
                 </a>
                 <p class="is-size-7">

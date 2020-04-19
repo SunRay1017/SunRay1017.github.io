@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Categoria: 前端开发 - Cherry的个人博客</title>
+<title>Category: 前端开发 - Cherry的个人博客</title>
 
 
     <meta property="og:type" content="website">
@@ -142,13 +142,66 @@
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="/categories">Categorias</a></li>
+            <li><a href="/categories">Categories</a></li>
             
             <li class="is-active"><a href="#" aria-current="page">前端开发</a></li>
         </ul>
         </nav>
     </div>
 </div>
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-04-19T02:23:00.000Z">2020-04-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 read (About 251 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/04/19/使用proxy代理解决vue跨域/">简单的数据请求，利用jquery做的，解决了跨域问题</a>
+            
+        </h1>
+        <div class="content">
+            <p>方法：</p>
+<p>使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&apos;/api&apos;: &#123;</span><br><span class="line">        target:&apos;http://localhost:8080&apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址</span><br><span class="line">        changeOrigin:true, // 在本地会创建一个虚拟服务端，然后发送请求的数据，并同时接收请求的数据，这样服务端和服务端进行数据的交互就不会有跨域问题</span><br><span class="line">        pathRewrite:&#123;  // 路径重写，</span><br><span class="line">          &apos;^/api&apos;: &apos;&apos;  // 替换target中的请求地址，也就是说以后你在请求http://api.douban.com/v2/XXXXX这个地址的时候直接写成/api即可。</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">``` </span><br><span class="line">并且在main.js中添加  axios.defaults.baseURL=&quot;/api&quot;;</span><br><span class="line"></span><br><span class="line">这样就解决跨域问题了，然后在你的vue页面请求数据时，就直接按原来的方式照写就行了。是不是很简单</span><br></pre></td></tr></table></figure></p>
+<p>requestData () {<br>      this.$axios.get(‘<a href="http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;).then" target="_blank" rel="noopener">http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;).then</a>(<br>        (res) =&gt; {<br>          console.log(res.data)</p>
+<pre><code>      this.lists = res.data.result
+    }
+
+  )
+}
+</code></pre><p><code>`</code></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
 
     <div class="card">
     
@@ -726,17 +779,17 @@ speedDown: speedDown
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Entradas
+                        Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        8
+                        9
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categorias
+                        Categories
                     </p>
                     <p class="title has-text-weight-normal">
                         2
@@ -746,17 +799,17 @@ speedDown: speedDown
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Etiquetas
+                        Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        7
+                        9
                     </p>
                 </div>
             </div>
         </nav>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/sunray1017" target="_blank">
-                SEGUIR</a>
+                Follow</a>
         </div>
         
         
@@ -848,7 +901,7 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categorias
+                Categories
             </h3>
             <ul class="menu-list">
             <li>
@@ -865,7 +918,7 @@ speedDown: speedDown
                 <span class="level-item">前端开发</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">8</span>
             </span>
         </a></li>
             </ul>
@@ -877,9 +930,9 @@ speedDown: speedDown
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Nube de etiquetas
+            Tag Cloud
         </h3>
-        <a href="/tags/Ajax/" style="font-size: 10px;">Ajax</a> <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/Html/" style="font-size: 20px;">Html</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Jquery/" style="font-size: 15px;">Jquery</a> <a href="/tags/Vue/" style="font-size: 10px;">Vue</a> <a href="/tags/个人简历/" style="font-size: 10px;">个人简历</a>
+        <a href="/tags/Ajax/" style="font-size: 10px;">Ajax</a> <a href="/tags/Axios/" style="font-size: 10px;">Axios</a> <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/Html/" style="font-size: 20px;">Html</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Jquery/" style="font-size: 15px;">Jquery</a> <a href="/tags/Vue/" style="font-size: 10px;">Vue</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/个人简历/" style="font-size: 10px;">个人简历</a>
     </div>
 </div>
 
@@ -891,8 +944,27 @@ speedDown: speedDown
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/04/19/使用proxy代理解决vue跨域/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="简单的数据请求，利用jquery做的，解决了跨域问题">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-04-19T02:23:00.000Z">2020-04-19</time></div>
+                    <a href="/2020/04/19/使用proxy代理解决vue跨域/" class="title has-link-black-ter is-size-6 has-text-weight-normal">简单的数据请求，利用jquery做的，解决了跨域问题</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -970,25 +1042,6 @@ speedDown: speedDown
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/09/06/谢宇莲的个人简历/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="谢宇莲的个人简历">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-06T08:45:00.000Z">2019-09-06</time></div>
-                    <a href="/2019/09/06/谢宇莲的个人简历/" class="title has-link-black-ter is-size-6 has-text-weight-normal">谢宇莲的个人简历</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/个人简历/">个人简历</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -997,9 +1050,20 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/04/">
+                <span class="level-start">
+                    <span class="level-item">April 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/02/">
@@ -1054,7 +1118,7 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1066,16 +1130,23 @@ speedDown: speedDown
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/Axios/">
+                        <span class="tag">Axios</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/CSS/">
                         <span class="tag">CSS</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Html/">
                         <span class="tag">Html</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
@@ -1096,6 +1167,13 @@ speedDown: speedDown
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Vue/">
                         <span class="tag">Vue</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/vue/">
+                        <span class="tag">vue</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1127,8 +1205,27 @@ speedDown: speedDown
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/04/19/使用proxy代理解决vue跨域/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="简单的数据请求，利用jquery做的，解决了跨域问题">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-04-19T02:23:00.000Z">2020-04-19</time></div>
+                    <a href="/2020/04/19/使用proxy代理解决vue跨域/" class="title has-link-black-ter is-size-6 has-text-weight-normal">简单的数据请求，利用jquery做的，解决了跨域问题</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1206,25 +1303,6 @@ speedDown: speedDown
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/09/06/谢宇莲的个人简历/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="谢宇莲的个人简历">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-06T08:45:00.000Z">2019-09-06</time></div>
-                    <a href="/2019/09/06/谢宇莲的个人简历/" class="title has-link-black-ter is-size-6 has-text-weight-normal">谢宇莲的个人简历</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/个人简历/">个人简历</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1233,9 +1311,20 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/04/">
+                <span class="level-start">
+                    <span class="level-item">April 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/02/">
@@ -1290,7 +1379,7 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1302,16 +1391,23 @@ speedDown: speedDown
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/Axios/">
+                        <span class="tag">Axios</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/CSS/">
                         <span class="tag">CSS</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Html/">
                         <span class="tag">Html</span>
-                        <span class="tag is-grey">4</span>
+                        <span class="tag is-grey">5</span>
                     </a>
                 </div>
                 
@@ -1332,6 +1428,13 @@ speedDown: speedDown
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Vue/">
                         <span class="tag">Vue</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/vue/">
+                        <span class="tag">vue</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1527,10 +1630,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Entradas',
+                POSTS: 'Posts',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categorias',
-                TAGS: 'Etiquetas',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
