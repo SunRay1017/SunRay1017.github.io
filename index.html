@@ -145,6 +145,54 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-05-28T06:56:17.711Z">2020-05-28</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1 分钟 read (About 184 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/05/28/element表格处理后台二位数组/"></a>
+            
+        </h1>
+        <div class="content">
+            <hr>
+<p>title: element表格处理后台二维数组<br>tags:</p>
+<ul>
+<li>vue<br>categories:</li>
+<li>前端开发<br>author: Cherry Xie<br>date: 2020-05-28 14:57:00</li>
+</ul>
+<hr>
+<p>当我们从后台请求过来的数据是一个多维数组，并且二级数组中的对象还是需要动态添加到表头中的，这个时候我们就需要用到插槽，如果直接用el-table嵌套的话,二级数组的数据是显示不出来的，所以我们可以使用以下方式，如：<br><figure class="highlight hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;el-table-column v-<span class="hljs-keyword">if</span>=<span class="hljs-string">"t_dedu.length&gt;0"</span> label=<span class="hljs-string">"施工队扣款"</span> width=<span class="hljs-string">"120"</span>&gt;</span><br><span class="line">      &lt;!-- 这里拿到班组列表循环到列中 --&gt;</span><br><span class="line">      &lt;el-table-column v-<span class="hljs-keyword">for</span>=<span class="hljs-string">"(project,index) in t_dedu"</span> :key=<span class="hljs-string">"index"</span> :label=<span class="hljs-string">"project.PRJ_STRC_NM"</span> width=<span class="hljs-string">"120"</span>&gt;</span><br><span class="line">        &lt;el-table-column label=<span class="hljs-string">"数量"</span> width=<span class="hljs-string">"120"</span>&gt;</span><br><span class="line">        <span class="hljs-comment">// 这里如果不使用插槽而是直接使用嵌套是拿不到数据的</span></span><br><span class="line">          &lt;template #default="&#123;row&#125;"&gt;&#123;&#123; row.proj_ly[index].RSS_QTY &#125;&#125;&lt;/template&gt;</span><br><span class="line">        &lt;/el-table-column&gt;</span><br><span class="line">        &lt;el-table-column label=<span class="hljs-string">"金额"</span> width=<span class="hljs-string">"120"</span>&gt;</span><br><span class="line">          &lt;template #default="&#123;row&#125;"&gt;&#123;&#123; row.proj_ly[index].RSS_MONEY &#125;&#125;&lt;/template&gt;</span><br><span class="line">        &lt;/el-table-column&gt;</span><br><span class="line">      &lt;/el-table-column&gt;</span><br><span class="line">      &lt;el-table-column v-<span class="hljs-keyword">if</span>=<span class="hljs-string">"t_dedu.length&gt;0"</span> label=<span class="hljs-string">"小计"</span> width=<span class="hljs-string">"120"</span>&gt;</span><br><span class="line">        &lt;el-table-column prop=<span class="hljs-string">"t_dedu_qty"</span> label=<span class="hljs-string">"数量"</span> width=<span class="hljs-string">"120"</span> /&gt;</span><br><span class="line">        &lt;el-table-column prop=<span class="hljs-string">"t_dedu_money"</span> label=<span class="hljs-string">"金额"</span> width=<span class="hljs-string">"120"</span> /&gt;</span><br><span class="line">      &lt;/el-table-column&gt;</span><br><span class="line">    &lt;/el-table-column&gt;</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-04-19T02:23:00.000Z">2020-04-19</time>
                 
                 <div class="level-item">
@@ -207,7 +255,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 read (About 0 words)
+                    几秒 read (About 58 words)
                 </span>
                 
                 
@@ -216,11 +264,13 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/02/28/闭包/">Vue 面试题，内含详细讲解</a>
+                <a class="has-link-black-ter" href="/2020/02/28/关于继承的几种方式/">Vue 面试题，内含详细讲解</a>
             
         </h1>
         <div class="content">
-            
+            <p>一、关于继承的几种方式，包含6种<br>1.原型链继承<br>2.借用构造函数继承<br>3.组合继承<br>4.原型式继承<br>5.寄生式继承<br>6.寄生组合式继承</p>
+<p>二、继承的使用场景</p>
+
         </div>
         
         
@@ -251,7 +301,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 read (About 58 words)
+                    几秒 read (About 0 words)
                 </span>
                 
                 
@@ -260,13 +310,11 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/02/28/关于继承的几种方式/">Vue 面试题，内含详细讲解</a>
+                <a class="has-link-black-ter" href="/2020/02/28/闭包/">Vue 面试题，内含详细讲解</a>
             
         </h1>
         <div class="content">
-            <p>一、关于继承的几种方式，包含6种<br>1.原型链继承<br>2.借用构造函数继承<br>3.组合继承<br>4.原型式继承<br>5.寄生式继承<br>6.寄生组合式继承</p>
-<p>二、继承的使用场景</p>
-
+            
         </div>
         
         
@@ -824,17 +872,17 @@ speedDown: speedDown
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Entradas
+                        Articles
                     </p>
                     <p class="title has-text-weight-normal">
-                        9
+                        10
                     </p>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categorias
+                        Catégories
                     </p>
                     <p class="title has-text-weight-normal">
                         2
@@ -844,7 +892,7 @@ speedDown: speedDown
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Etiquetas
+                        Tags
                     </p>
                     <p class="title has-text-weight-normal">
                         9
@@ -854,7 +902,7 @@ speedDown: speedDown
         </nav>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/sunray1017" target="_blank">
-                SEGUIR</a>
+                SUIVRE</a>
         </div>
         
         
@@ -908,7 +956,7 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Links
+            Liens
         </h3>
         <ul class="menu-list">
         
@@ -946,7 +994,7 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categorias
+                Catégories
             </h3>
             <ul class="menu-list">
             <li>
@@ -975,7 +1023,7 @@ speedDown: speedDown
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Nube de etiquetas
+            Nuage de tags
         </h3>
         <a href="/tags/Ajax/" style="font-size: 10px;">Ajax</a> <a href="/tags/Axios/" style="font-size: 10px;">Axios</a> <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/Html/" style="font-size: 20px;">Html</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Jquery/" style="font-size: 15px;">Jquery</a> <a href="/tags/Vue/" style="font-size: 10px;">Vue</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/个人简历/" style="font-size: 10px;">个人简历</a>
     </div>
@@ -989,8 +1037,27 @@ speedDown: speedDown
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Récents
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/05/28/element表格处理后台二位数组/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-28T06:56:17.711Z">2020-05-28</time></div>
+                    <a href="/2020/05/28/element表格处理后台二位数组/" class="title has-link-black-ter is-size-6 has-text-weight-normal"></a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1004,25 +1071,6 @@ speedDown: speedDown
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-04-19T02:23:00.000Z">2020-04-19</time></div>
                     <a href="/2020/04/19/使用proxy代理解决vue跨域/" class="title has-link-black-ter is-size-6 has-text-weight-normal">使用proxy代理解决vue跨域</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2020/02/28/闭包/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time></div>
-                    <a href="/2020/02/28/闭包/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
                     </p>
@@ -1051,6 +1099,25 @@ speedDown: speedDown
         
         <article class="media">
             
+            <a href="/2020/02/28/闭包/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time></div>
+                    <a href="/2020/02/28/闭包/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2020/02/28/面试题-JS/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
@@ -1068,25 +1135,6 @@ speedDown: speedDown
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/09/26/简单的利用jquery做数据请求-解决了跨域问题/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="简单的数据请求，利用jquery做的，解决了跨域问题">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-26T02:23:00.000Z">2019-09-26</time></div>
-                    <a href="/2019/09/26/简单的利用jquery做数据请求-解决了跨域问题/" class="title has-link-black-ter is-size-6 has-text-weight-normal">简单的数据请求，利用jquery做的，解决了跨域问题</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1095,9 +1143,20 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/04/">
@@ -1163,7 +1222,7 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1250,8 +1309,27 @@ speedDown: speedDown
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recientes
+            Récents
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/05/28/element表格处理后台二位数组/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-28T06:56:17.711Z">2020-05-28</time></div>
+                    <a href="/2020/05/28/element表格处理后台二位数组/" class="title has-link-black-ter is-size-6 has-text-weight-normal"></a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1265,25 +1343,6 @@ speedDown: speedDown
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-04-19T02:23:00.000Z">2020-04-19</time></div>
                     <a href="/2020/04/19/使用proxy代理解决vue跨域/" class="title has-link-black-ter is-size-6 has-text-weight-normal">使用proxy代理解决vue跨域</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2020/02/28/闭包/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time></div>
-                    <a href="/2020/02/28/闭包/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
                     </p>
@@ -1312,6 +1371,25 @@ speedDown: speedDown
         
         <article class="media">
             
+            <a href="/2020/02/28/闭包/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time></div>
+                    <a href="/2020/02/28/闭包/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2020/02/28/面试题-JS/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
@@ -1329,25 +1407,6 @@ speedDown: speedDown
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/09/26/简单的利用jquery做数据请求-解决了跨域问题/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="简单的数据请求，利用jquery做的，解决了跨域问题">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-26T02:23:00.000Z">2019-09-26</time></div>
-                    <a href="/2019/09/26/简单的利用jquery做数据请求-解决了跨域问题/" class="title has-link-black-ter is-size-6 has-text-weight-normal">简单的数据请求，利用jquery做的，解决了跨域问题</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1356,9 +1415,20 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archivos
+            Archives
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/04/">
@@ -1424,7 +1494,7 @@ speedDown: speedDown
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Etiquetas
+                Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1675,10 +1745,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Entradas',
+                POSTS: 'Articles',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categorias',
-                TAGS: 'Etiquetas',
+                CATEGORIES: 'Catégories',
+                TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
