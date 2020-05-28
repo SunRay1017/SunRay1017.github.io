@@ -11,7 +11,7 @@
 
 
     <meta name="description" content="方法： 使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：1234567891011&amp;apos;/api&amp;apos;: &amp;#123;        target:&amp;apos;http://localhost:8080&amp;apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址        changeOrigin:true">
-<meta name="keywords" content="Html,CSS,vue,Axios">
+<meta name="keywords" content="vue,Html,CSS,Axios">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用proxy代理解决vue跨域">
 <meta property="og:url" content="http://yoursite.com/2020/04/19/使用proxy代理解决vue跨域/index.html">
@@ -19,7 +19,7 @@
 <meta property="og:description" content="方法： 使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：1234567891011&amp;apos;/api&amp;apos;: &amp;#123;        target:&amp;apos;http://localhost:8080&amp;apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址        changeOrigin:true">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="og:updated_time" content="2020-04-19T13:52:20.989Z">
+<meta property="og:updated_time" content="2020-04-19T13:55:15.627Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用proxy代理解决vue跨域">
 <meta name="twitter:description" content="方法： 使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：1234567891011&amp;apos;/api&amp;apos;: &amp;#123;        target:&amp;apos;http://localhost:8080&amp;apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址        changeOrigin:true">
@@ -174,10 +174,9 @@
         <div class="content">
             <p>方法：</p>
 <p>使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&apos;/api&apos;: &#123;</span><br><span class="line">        target:&apos;http://localhost:8080&apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址</span><br><span class="line">        changeOrigin:true, // 在本地会创建一个虚拟服务端，然后发送请求的数据，并同时接收请求的数据，这样服务端和服务端进行数据的交互就不会有跨域问题</span><br><span class="line">        pathRewrite:&#123;  // 路径重写，</span><br><span class="line">          &apos;^/api&apos;: &apos;&apos;  // 替换target中的请求地址，也就是说以后你在请求http://api.douban.com/v2/XXXXX这个地址的时候直接写成/api即可。</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">``` </span><br><span class="line">并且在main.js中添加  axios.defaults.baseURL=&quot;/api&quot;;</span><br><span class="line"></span><br><span class="line">这样就解决跨域问题了，然后在你的vue页面请求数据时，就直接按原来的方式照写就行了。是不是很简单</span><br></pre></td></tr></table></figure></p>
-<p>requestData () {<br>      this.$axios.get(‘<a href="http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;).then" target="_blank" rel="noopener">http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;).then</a>(<br>        (res) =&gt; {<br>          console.log(res.data)</p>
+<p>requestData () {<br>      this.$axios.get(‘<a href="http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;" target="_blank" rel="noopener">http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;</a>)<br>      .then(<br>        (res) =&gt; {<br>          console.log(res.data)</p>
 <pre><code>      this.lists = res.data.result
     }
-
   )
 }
 </code></pre><p><code>`</code></p>
@@ -241,7 +240,7 @@
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/02/28/关于继承的几种方式/">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/02/28/闭包/">
                 <span class="level-item">Vue 面试题，内含详细讲解</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
@@ -292,7 +291,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Posts
+                        Entradas
                     </p>
                     <p class="title has-text-weight-normal">
                         9
@@ -302,7 +301,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categories
+                        Categorias
                     </p>
                     <p class="title has-text-weight-normal">
                         2
@@ -312,7 +311,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tags
+                        Etiquetas
                     </p>
                     <p class="title has-text-weight-normal">
                         9
@@ -322,7 +321,7 @@
         </nav>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/sunray1017" target="_blank">
-                Follow</a>
+                SEGUIR</a>
         </div>
         
         
@@ -414,7 +413,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categories
+                Categorias
             </h3>
             <ul class="menu-list">
             <li>
@@ -443,7 +442,7 @@
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Tag Cloud
+            Nube de etiquetas
         </h3>
         <a href="/tags/Ajax/" style="font-size: 10px;">Ajax</a> <a href="/tags/Axios/" style="font-size: 10px;">Axios</a> <a href="/tags/CSS/" style="font-size: 20px;">CSS</a> <a href="/tags/Html/" style="font-size: 20px;">Html</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Jquery/" style="font-size: 15px;">Jquery</a> <a href="/tags/Vue/" style="font-size: 10px;">Vue</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/个人简历/" style="font-size: 10px;">个人简历</a>
     </div>
@@ -457,7 +456,7 @@
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            Recientes
         </h3>
         
         <article class="media">
@@ -481,25 +480,6 @@
         
         <article class="media">
             
-            <a href="/2020/02/28/关于继承的几种方式/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time></div>
-                    <a href="/2020/02/28/关于继承的几种方式/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2020/02/28/闭包/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
@@ -510,6 +490,25 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time></div>
                     <a href="/2020/02/28/闭包/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/02/28/关于继承的几种方式/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time></div>
+                    <a href="/2020/02/28/关于继承的几种方式/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
                     </p>
@@ -563,7 +562,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            Archivos
         </h3>
         <ul class="menu-list">
         
@@ -631,7 +630,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                Etiquetas
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -718,7 +717,7 @@
 <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            Recientes
         </h3>
         
         <article class="media">
@@ -742,25 +741,6 @@
         
         <article class="media">
             
-            <a href="/2020/02/28/关于继承的几种方式/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time></div>
-                    <a href="/2020/02/28/关于继承的几种方式/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2020/02/28/闭包/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
@@ -771,6 +751,25 @@
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time></div>
                     <a href="/2020/02/28/闭包/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/02/28/关于继承的几种方式/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Vue 面试题，内含详细讲解">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:23:00.000Z">2020-02-28</time></div>
+                    <a href="/2020/02/28/关于继承的几种方式/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Vue 面试题，内含详细讲解</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/前端开发/">前端开发</a>
                     </p>
@@ -824,7 +823,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            Archivos
         </h3>
         <ul class="menu-list">
         
@@ -892,7 +891,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                Etiquetas
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1143,10 +1142,10 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
+                POSTS: 'Entradas',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
+                CATEGORIES: 'Categorias',
+                TAGS: 'Etiquetas',
                 UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
