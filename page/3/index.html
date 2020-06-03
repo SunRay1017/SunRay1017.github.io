@@ -71,14 +71,14 @@
     
     
     
-    <article id="post-ceshi" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+    <article id="post-使用proxy代理解决vue跨域" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
     
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2020/05/01/ceshi/">ceshi</a> 
+  <a class="article-title" href="/2020/04/19/使用proxy代理解决vue跨域/">使用proxy代理解决vue跨域</a> 
 </h2>
  
 
@@ -87,8 +87,8 @@
 
     
     <div class="article-meta">
-      <a href="/2020/05/01/ceshi/" class="article-date">
-  <time datetime="2020-05-01T01:23:00.000Z" itemprop="datePublished">2020-05-01</time>
+      <a href="/2020/04/19/使用proxy代理解决vue跨域/" class="article-date">
+  <time datetime="2020-04-19T02:23:00.000Z" itemprop="datePublished">2020-04-19</time>
 </a>
       
   <div class="article-category">
@@ -109,7 +109,14 @@
       
 
       
-      <p><img src="/.com//2.jpg" alt="aaa"></p>
+      <p>方法：</p>
+<p>使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&apos;/api&apos;: &#123;</span><br><span class="line">        target:&apos;http://localhost:8080&apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址</span><br><span class="line">        changeOrigin:true, // 在本地会创建一个虚拟服务端，然后发送请求的数据，并同时接收请求的数据，这样服务端和服务端进行数据的交互就不会有跨域问题</span><br><span class="line">        pathRewrite:&#123;  // 路径重写，</span><br><span class="line">          &apos;^/api&apos;: &apos;&apos;  // 替换target中的请求地址，也就是说以后你在请求http://api.douban.com/v2/XXXXX这个地址的时候直接写成/api即可。</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">``` </span><br><span class="line">并且在main.js中添加  axios.defaults.baseURL=&quot;/api&quot;;</span><br><span class="line"></span><br><span class="line">这样就解决跨域问题了，然后在你的vue页面请求数据时，就直接按原来的方式照写就行了。是不是很简单</span><br></pre></td></tr></table></figure></p>
+<p>requestData () {<br>      this.$axios.get(‘<a href="http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;" target="_blank" rel="noopener">http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;</a>)<br>      .then(<br>        (res) =&gt; {<br>          console.log(res.data)</p>
+<pre><code>      this.lists = res.data.result
+    }
+  )
+}
+</code></pre><p><code>`</code></p>
 
       
       <!-- reward -->
@@ -122,7 +129,7 @@
     <footer class="article-footer">
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Html/">Html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jquery/">Jquery</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Axios/">Axios</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Html/">Html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
 
 
     </footer>
@@ -147,7 +154,7 @@
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/2/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/4/">下一页</a>
+    <a class="extend prev" rel="prev" href="/page/2/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/4/">下一页</a>
   </nav>
   
 </section>
