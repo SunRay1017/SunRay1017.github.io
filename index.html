@@ -71,17 +71,30 @@
     
     
     
-    <article id="post-element表格处理后台二位数组" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+    <article id="post-element表格动态合并行" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2020/06/03/element表格动态合并行/">element表格动态合并行</a> 
+</h2>
+ 
+
+    </header>
     
 
     
     <div class="article-meta">
-      <a href="/2020/05/28/element表格处理后台二位数组/" class="article-date">
-  <time datetime="2020-05-28T06:56:17.711Z" itemprop="datePublished">2020-05-28</time>
+      <a href="/2020/06/03/element表格动态合并行/" class="article-date">
+  <time datetime="2020-06-03T02:23:00.000Z" itemprop="datePublished">2020-06-03</time>
 </a>
       
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端开发/">前端开发</a>
+  </div>
+
       
       
       
@@ -96,14 +109,10 @@
       
 
       
-      <hr>
-<p>title: element表格处理后台二维数组<br>tags:</p>
-<ul>
-<li>vue<br>categories:</li>
-<li>前端开发<br>author: Cherry Xie<br>date: 2020-05-28 14:57:00</li>
-</ul>
-<hr>
-<p>当我们从后台请求过来的数据是一个多维数组，并且二级数组中的对象还是需要动态添加到表头中的，这个时候我们就需要用到插槽，如果直接用el-table嵌套的话,二级数组的数据是显示不出来的，所以我们可以使用以下方式，如：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;el-table-column v-<span class="keyword">if</span>=<span class="string">"t_dedu.length&gt;0"</span> label=<span class="string">"施工队扣款"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">      &lt;!-- 这里拿到班组列表循环到列中 --&gt;</span><br><span class="line">      &lt;el-table-column v-<span class="keyword">for</span>=<span class="string">"(project,index) in t_dedu"</span> :key=<span class="string">"index"</span> :label=<span class="string">"project.PRJ_STRC_NM"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">        &lt;el-table-column label=<span class="string">"数量"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">        <span class="comment">// 这里如果不使用插槽而是直接使用嵌套是拿不到数据的</span></span><br><span class="line">          &lt;template #default="&#123;row&#125;"&gt;&#123;&#123; row.proj_ly[index].RSS_QTY &#125;&#125;&lt;/template&gt;</span><br><span class="line">        &lt;/el-table-column&gt;</span><br><span class="line">        &lt;el-table-column label=<span class="string">"金额"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">          &lt;template #default="&#123;row&#125;"&gt;&#123;&#123; row.proj_ly[index].RSS_MONEY &#125;&#125;&lt;/template&gt;</span><br><span class="line">        &lt;/el-table-column&gt;</span><br><span class="line">      &lt;/el-table-column&gt;</span><br><span class="line">      &lt;el-table-column v-<span class="keyword">if</span>=<span class="string">"t_dedu.length&gt;0"</span> label=<span class="string">"小计"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">        &lt;el-table-column prop=<span class="string">"t_dedu_qty"</span> label=<span class="string">"数量"</span> width=<span class="string">"120"</span> /&gt;</span><br><span class="line">        &lt;el-table-column prop=<span class="string">"t_dedu_money"</span> label=<span class="string">"金额"</span> width=<span class="string">"120"</span> /&gt;</span><br><span class="line">      &lt;/el-table-column&gt;</span><br><span class="line">    &lt;/el-table-column&gt;</span><br></pre></td></tr></table></figure></p>
+      <p>实现合并行的方法其实在每一行数据渲染的时候都会执行，只不过在渲染过程中我们设置了它合并的行数和列数，以得到不同的效果。所以我们需要生成一个与行数相同的数组记录每一行设置的合并数。处理过程如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">getSpanArr(data) &#123;　</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; data.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i === <span class="number">0</span>) &#123;</span><br><span class="line">              <span class="keyword">this</span>.spanArr.push(<span class="number">1</span>);</span><br><span class="line">              <span class="keyword">this</span>.pos = <span class="number">0</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="comment">// 判断当前元素与上一个元素是否相同</span></span><br><span class="line">    <span class="keyword">if</span> (data[i].name === data[i - <span class="number">1</span>].name) &#123;</span><br><span class="line">                <span class="keyword">this</span>.spanArr[<span class="keyword">this</span>.pos] += <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">this</span>.spanArr.push(<span class="number">0</span>);</span><br><span class="line">              &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">this</span>.spanArr.push(<span class="number">1</span>);</span><br><span class="line">                <span class="keyword">this</span>.pos = i;</span><br><span class="line">              &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>data就是我们从后台拿到的数据，通常是一个数组；spanArr是一个空的数组，用于存放每一行记录的合并数；pos是spanArr的索引。上述代码意思是：如果是第一条记录（索引为０），向数组中加入１，并设置索引位置；如果不是第一条记录，则判断它与前一条记录是否相等，如果相等，则向spanArr中添入元素０，并将前一位元素＋１，表示合并行数＋１，以此往复，得到所有行的合并数，０即表示该行不显示。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cellMerge(&#123; row, column, rowIndex, columnIndex &#125;) &#123;</span><br><span class="line">      <span class="keyword">if</span> (columnIndex === <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">const</span> _row = <span class="keyword">this</span>.spanArr[rowIndex];</span><br><span class="line">            <span class="keyword">const</span> _col = _row &gt; <span class="number">0</span> ? <span class="number">1</span> : <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">return</span> &#123;</span><br><span class="line">                  rowspan: _row,</span><br><span class="line">                  colspan: _col</span><br><span class="line">            &#125;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></p>
+<p>然后根据得到的数组spanArr对表格进行合并渲染，并绑定合并方法<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;el-table</span><br><span class="line">      border</span><br><span class="line">      :data=<span class="string">"tableData"</span></span><br><span class="line">      style=<span class="string">"width: 100%;max-height: 160px;overflow: auto"</span></span><br><span class="line">      :span-method=<span class="string">"cellMerge"</span>&gt;</span><br><span class="line">    ......</span><br></pre></td></tr></table></figure></p>
+<p>这里就不上图了，代码直接复制过去就可以用啦，但是要自己弄懂其中的逻辑哦！</p>
 
       
       <!-- reward -->
@@ -116,6 +125,8 @@
     <footer class="article-footer">
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
 
     </footer>
 
@@ -139,7 +150,7 @@
   
   <nav class="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
   </nav>
   
 </section>
