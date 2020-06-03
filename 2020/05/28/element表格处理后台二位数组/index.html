@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-     Cherry的个人博客
+    element表格处理后台二维数组 |  Cherry的个人博客
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -38,13 +38,26 @@
 
   <div class="article-inner">
     
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  element表格处理后台二维数组
+</h1>
+ 
+
+    </header>
+    
 
     
     <div class="article-meta">
       <a href="/2020/05/28/element表格处理后台二位数组/" class="article-date">
-  <time datetime="2020-05-28T06:56:17.711Z" itemprop="datePublished">2020-05-28</time>
+  <time datetime="2020-05-28T06:57:00.000Z" itemprop="datePublished">2020-05-28</time>
 </a>
       
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端开发/">前端开发</a>
+  </div>
+
       
       
 <div class="word_count">
@@ -52,7 +65,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">318</span>
+            <span class="post-count">292</span>
         </span>
     </span>
 
@@ -84,14 +97,7 @@
       
 
       
-      <hr>
-<p>title: element表格处理后台二维数组<br>tags:</p>
-<ul>
-<li>vue<br>categories:</li>
-<li>前端开发<br>author: Cherry Xie<br>date: 2020-05-28 14:57:00</li>
-</ul>
-<hr>
-<p>当我们从后台请求过来的数据是一个多维数组，并且二级数组中的对象还是需要动态添加到表头中的，这个时候我们就需要用到插槽，如果直接用el-table嵌套的话,二级数组的数据是显示不出来的，所以我们可以使用以下方式，如：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;el-table-column v-<span class="keyword">if</span>=<span class="string">"t_dedu.length&gt;0"</span> label=<span class="string">"施工队扣款"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">      &lt;!-- 这里拿到班组列表循环到列中 --&gt;</span><br><span class="line">      &lt;el-table-column v-<span class="keyword">for</span>=<span class="string">"(project,index) in t_dedu"</span> :key=<span class="string">"index"</span> :label=<span class="string">"project.PRJ_STRC_NM"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">        &lt;el-table-column label=<span class="string">"数量"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">        <span class="comment">// 这里如果不使用插槽而是直接使用嵌套是拿不到数据的</span></span><br><span class="line">          &lt;template #default="&#123;row&#125;"&gt;&#123;&#123; row.proj_ly[index].RSS_QTY &#125;&#125;&lt;/template&gt;</span><br><span class="line">        &lt;/el-table-column&gt;</span><br><span class="line">        &lt;el-table-column label=<span class="string">"金额"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">          &lt;template #default="&#123;row&#125;"&gt;&#123;&#123; row.proj_ly[index].RSS_MONEY &#125;&#125;&lt;/template&gt;</span><br><span class="line">        &lt;/el-table-column&gt;</span><br><span class="line">      &lt;/el-table-column&gt;</span><br><span class="line">      &lt;el-table-column v-<span class="keyword">if</span>=<span class="string">"t_dedu.length&gt;0"</span> label=<span class="string">"小计"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">        &lt;el-table-column prop=<span class="string">"t_dedu_qty"</span> label=<span class="string">"数量"</span> width=<span class="string">"120"</span> /&gt;</span><br><span class="line">        &lt;el-table-column prop=<span class="string">"t_dedu_money"</span> label=<span class="string">"金额"</span> width=<span class="string">"120"</span> /&gt;</span><br><span class="line">      &lt;/el-table-column&gt;</span><br><span class="line">    &lt;/el-table-column&gt;</span><br></pre></td></tr></table></figure></p>
+      <p>当我们从后台请求过来的数据是一个多维数组，并且二级数组中的对象还是需要动态添加到表头中的，这个时候我们就需要用到插槽，如果直接用el-table嵌套的话,二级数组的数据是显示不出来的，所以我们可以使用以下方式，如：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;el-table-column v-<span class="keyword">if</span>=<span class="string">"t_dedu.length&gt;0"</span> label=<span class="string">"施工队扣款"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">      &lt;!-- 这里拿到班组列表循环到列中 --&gt;</span><br><span class="line">      &lt;el-table-column v-<span class="keyword">for</span>=<span class="string">"(project,index) in t_dedu"</span> :key=<span class="string">"index"</span> :label=<span class="string">"project.PRJ_STRC_NM"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">        &lt;el-table-column label=<span class="string">"数量"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">        <span class="comment">// 这里如果不使用插槽而是直接使用嵌套是拿不到数据的</span></span><br><span class="line">          &lt;template #default="&#123;row&#125;"&gt;&#123;&#123; row.proj_ly[index].RSS_QTY &#125;&#125;&lt;/template&gt;</span><br><span class="line">        &lt;/el-table-column&gt;</span><br><span class="line">        &lt;el-table-column label=<span class="string">"金额"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">          &lt;template #default="&#123;row&#125;"&gt;&#123;&#123; row.proj_ly[index].RSS_MONEY &#125;&#125;&lt;/template&gt;</span><br><span class="line">        &lt;/el-table-column&gt;</span><br><span class="line">      &lt;/el-table-column&gt;</span><br><span class="line">      &lt;el-table-column v-<span class="keyword">if</span>=<span class="string">"t_dedu.length&gt;0"</span> label=<span class="string">"小计"</span> width=<span class="string">"120"</span>&gt;</span><br><span class="line">        &lt;el-table-column prop=<span class="string">"t_dedu_qty"</span> label=<span class="string">"数量"</span> width=<span class="string">"120"</span> /&gt;</span><br><span class="line">        &lt;el-table-column prop=<span class="string">"t_dedu_money"</span> label=<span class="string">"金额"</span> width=<span class="string">"120"</span> /&gt;</span><br><span class="line">      &lt;/el-table-column&gt;</span><br><span class="line">    &lt;/el-table-column&gt;</span><br></pre></td></tr></table></figure></p>
 
       
       <!-- reward -->
@@ -167,6 +173,8 @@
 <div id="share-mask"></div>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
 
     </footer>
 
