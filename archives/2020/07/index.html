@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-     Cherry的个人博客
+    Archives: 2020/7 |  Cherry的个人博客
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -33,133 +33,51 @@
   
   <div id="app">
     <main class="content on">
-      
-<section class="cover">
-    
-      
-      <a class="forkMe" href="https://github.com/SunRay1017" target="_blank"><img width="149" height="149" src="/images/forkme.png" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-    
-  <div class="cover-frame">
-    <div class="bg-box">
-      <img src="/images/cover1.jpg" alt="image frame">
-    </div>
-    <div class="cover-inner text-center text-white">
-      <h1><a href="/">Cherry的个人博客</a></h1>
-      <div id="subtitle-box">
-        
-        <span id="subtitle"></span>
-        
-      </div>
-      <div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-learn-more">
-    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
-  </div>
-</section>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
-
-<div id="main">
-  <section class="outer">
+      <section class="outer">
   <article class="articles">
     
     
+    <h1 class="page-type-title">2020/7</h1>
     
     
-    <article id="post-使用proxy代理解决vue跨域" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
+  
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2020" class="archive-year">2020</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/07/07/axios封装和使用/" class="archive-article-date">
+  <time datetime="2020-07-07T01:23:00.000Z" itemprop="datePublished">07/07</time>
+</a>
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2020/04/19/使用proxy代理解决vue跨域/">使用proxy代理解决vue跨域</a> 
+  <a class="archive-article-title" href="/2020/07/07/axios封装和使用/">axios封装和使用</a> 
 </h2>
  
 
     </header>
     
-
     
-    <div class="article-meta">
-      <a href="/2020/04/19/使用proxy代理解决vue跨域/" class="article-date">
-  <time datetime="2020-04-19T02:23:00.000Z" itemprop="datePublished">2020-04-19</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/前端开发/">前端开发</a>
   </div>
-
-      
-      
-      
-    </div>
-    
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <p>方法：</p>
-<p>使用vue-cli构建工具构建的vue项目中，在config/index.js中的proxyTable中添加 ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&apos;/api&apos;: &#123;</span><br><span class="line">        target:&apos;http://localhost:8080&apos;, // 这里的地址写自己要请求的地址，而不是数据接口的地址</span><br><span class="line">        changeOrigin:true, // 在本地会创建一个虚拟服务端，然后发送请求的数据，并同时接收请求的数据，这样服务端和服务端进行数据的交互就不会有跨域问题</span><br><span class="line">        pathRewrite:&#123;  // 路径重写，</span><br><span class="line">          &apos;^/api&apos;: &apos;&apos;  // 替换target中的请求地址，也就是说以后你在请求http://api.douban.com/v2/XXXXX这个地址的时候直接写成/api即可。</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">``` </span><br><span class="line">并且在main.js中添加  axios.defaults.baseURL=&quot;/api&quot;;</span><br><span class="line"></span><br><span class="line">这样就解决跨域问题了，然后在你的vue页面请求数据时，就直接按原来的方式照写就行了。是不是很简单</span><br></pre></td></tr></table></figure></p>
-<p>requestData () {<br>      this.$axios.get(‘<a href="http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;" target="_blank" rel="noopener">http://www.phonegap100.com/appapi.php?a=getPortalList&amp;catid=20&amp;page=1&#39;</a>)<br>      .then(<br>        (res) =&gt; {<br>          console.log(res.data)</p>
-<pre><code>      this.lists = res.data.result
-    }
-  )
-}
-</code></pre><p><code>`</code></p>
-
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Axios/">Axios</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Html/">Html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
-
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
 </article>
-    
-  </article>
+      
+      
+    </div>
+  </div>
+  
   
 
   
-  <nav class="page-nav">
-    
-    <a class="extend prev" rel="prev" href="/page/3/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/5/">下一页</a>
-  </nav>
-  
-</section>
-</div>
-
+</article></section>
       <footer class="footer">
   <div class="outer">
     <ul>
